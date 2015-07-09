@@ -1,0 +1,43 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphonesimulator/CommonUI.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CommonBaseView.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/CommonUI/CommonUI/BaseUI/CommonBaseView.h"
+        },
+        {
+          'type': 'file',
+          'name': "CommonPageViewController.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/CommonUI/CommonUI/Page/CommonPageViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "CommonUI-Swift.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphonesimulator/CommonUI.framework/Headers/CommonUI-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "CommonUI.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/CommonUI/CommonUI/CommonUI.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphonesimulator/CommonUI.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Intermediates/CommonUI.build/Debug-iphonesimulator/CommonUI.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

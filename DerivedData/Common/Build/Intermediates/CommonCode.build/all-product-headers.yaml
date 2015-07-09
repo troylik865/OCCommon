@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphonesimulator/CommonCode.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CommonCode-Swift.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphonesimulator/CommonCode.framework/Headers/CommonCode-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "CommonCode.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/CommonCode/CommonCode/CommonCode.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphonesimulator/CommonCode.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Intermediates/CommonCode.build/Debug-iphonesimulator/CommonCode.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

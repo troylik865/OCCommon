@@ -1,0 +1,6 @@
+framework module CommonUI {
+  umbrella header "CommonUI.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+//
+//  CommonUI-Prefix.pch
+//  CommonUI
+//
+//  Created by 李彬 on 15/7/6.
+//  Copyright (c) 2015年 李彬. All rights reserved.
+//
+
+#ifndef CommonUI_CommonUI_Prefix_pch
+#define CommonUI_CommonUI_Prefix_pch
+
+#import "CommonUIMacro.h"
+#import <BaseCode/BaseCode.h>
+
+
+#endif

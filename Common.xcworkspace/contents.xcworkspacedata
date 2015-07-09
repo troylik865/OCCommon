@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Portal/Portal.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Home/Home.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CommonUI/CommonUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BaseCode/BaseCode.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreService/CoreService.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreMacro/CoreMacro.xcodeproj">
+   </FileRef>
+</Workspace>

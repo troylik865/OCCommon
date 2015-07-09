@@ -1,0 +1,16 @@
+//
+//  CoreService-Prefix.pch
+//  CoreService
+//
+//  Created by 李彬 on 15/7/7.
+//  Copyright (c) 2015年 李彬. All rights reserved.
+//
+
+#ifndef CoreService_CoreService_Prefix_pch
+#define CoreService_CoreService_Prefix_pch
+
+#import <CoreMacro/CoreMacro.h>
+#import "CoreServiceMacro.h"
+#import "NSString+CoreService.h"
+
+#endif

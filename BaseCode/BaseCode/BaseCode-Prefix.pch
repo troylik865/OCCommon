@@ -1,0 +1,17 @@
+//
+//  BaseCode-prefix.pch
+//  BaseCode
+//
+//  Created by 李彬 on 15/7/7.
+//  Copyright (c) 2015年 李彬. All rights reserved.
+//
+
+#ifndef BaseCode_BaseCode_prefix_pch
+#define BaseCode_BaseCode_prefix_pch
+
+#import "BaseCodeMacro.h"
+
+#import <CoreService/CoreService.h>
+#import <CoreMacro/CoreMacro.h>
+
+#endif

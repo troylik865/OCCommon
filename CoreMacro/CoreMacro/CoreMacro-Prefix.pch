@@ -1,0 +1,14 @@
+//
+//  CoreMacro-Prefix.pch
+//  CoreMacro
+//
+//  Created by 李彬 on 15/7/7.
+//  Copyright (c) 2015年 李彬. All rights reserved.
+//
+
+#ifndef CoreMacro_CoreMacro_Prefix_pch
+#define CoreMacro_CoreMacro_Prefix_pch
+
+#import "CoreMacroDefine.h"
+
+#endif

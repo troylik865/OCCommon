@@ -1,0 +1,58 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphonesimulator/BaseCode.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "BaseCode-Swift.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphonesimulator/BaseCode.framework/Headers/BaseCode-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "BaseCode.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/BaseCode/BaseCode/BaseCode.h"
+        },
+        {
+          'type': 'file',
+          'name': "BaseCodeMacro.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/BaseCode/BaseCode/Macro/BaseCodeMacro.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+Common.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/BaseCode/BaseCode/Category/NSString+Common.h"
+        },
+        {
+          'type': 'file',
+          'name': "RangeModel.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/BaseCode/BaseCode/Category/RangeModel.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+Common.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/BaseCode/BaseCode/Category/UIImage+Common.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImageView+Cache.h",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/BaseCode/BaseCode/Category/UIImageView+Cache.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphonesimulator/BaseCode.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Intermediates/BaseCode.build/Debug-iphonesimulator/BaseCode.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+ const unsigned char BaseCodeTestsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:BaseCodeTests  PROJECT:BaseCode-1" "\n"; const double BaseCodeTestsVersionNumber __attribute__ ((used)) = (double)1.;

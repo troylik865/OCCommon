@@ -1,0 +1,1 @@
+ const unsigned char CoreMacroTestsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:CoreMacroTests  PROJECT:CoreMacro-1" "\n"; const double CoreMacroTestsVersionNumber __attribute__ ((used)) = (double)1.;
