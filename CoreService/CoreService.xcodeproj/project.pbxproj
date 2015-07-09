@@ -45,7 +45,6 @@
 		DABF31D01B4BC8C500F42873 /* CoreMacro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMacro.framework; path = "../CoreMacro/build/Debug-iphoneos/CoreMacro.framework"; sourceTree = "<group>"; };
 		DABF31D81B4BCC3600F42873 /* NSString+CoreService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CoreService.h"; sourceTree = "<group>"; };
 		DABF31D91B4BCC3600F42873 /* NSString+CoreService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CoreService.m"; sourceTree = "<group>"; };
-		DABF31DC1B4BCC9800F42873 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		DABF31DE1B4BCD3600F42873 /* CoreServiceMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreServiceMacro.h; sourceTree = "<group>"; };
 		DABF31DF1B4BCD8500F42873 /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -93,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				DABF31DF1B4BCD8500F42873 /* libSystem.dylib */,
-				DABF31DC1B4BCC9800F42873 /* libcommonCrypto.dylib */,
 				DABF31D01B4BC8C500F42873 /* CoreMacro.framework */,
 				DA8B618B1B199257002639D7 /* CoreService */,
 				DA8B61981B199257002639D7 /* CoreServiceTests */,
