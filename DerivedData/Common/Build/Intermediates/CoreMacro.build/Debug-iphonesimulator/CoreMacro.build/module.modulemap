@@ -1,6 +1,0 @@
-framework module CoreMacro {
-  umbrella header "CoreMacro.h"
-
-  export *
-  module * { export * }
-}

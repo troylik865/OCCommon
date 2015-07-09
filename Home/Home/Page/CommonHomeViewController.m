@@ -7,6 +7,7 @@
 //
 
 #import "CommonHomeViewController.h"
+#import "ClickButton.h"
 
 @interface CommonHomeViewController ()
 
@@ -18,6 +19,12 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
     self.navigationController.navigationBarHidden = YES;
+    ClickButton *button = [[ClickButton alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+    button.backgroundColor = [UIColor blackColor];
+    button.block = ^(int a,int b) {
+        return a + b;
+    };
+    [self.view addSubview:button];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle {
@@ -26,7 +33,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
 }
 
 @end

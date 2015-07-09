@@ -1,6 +1,0 @@
-framework module CoreService {
-  umbrella header "CoreService.h"
-
-  export *
-  module * { export * }
-}

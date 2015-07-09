@@ -1,1 +1,0 @@
- const unsigned char CommonCodeTestsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:CommonCodeTests  PROJECT:CommonCode-1" "\n"; const double CommonCodeTestsVersionNumber __attribute__ ((used)) = (double)1.;

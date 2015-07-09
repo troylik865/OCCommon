@@ -15,6 +15,8 @@
 		DA8B61E11B199928002639D7 /* CommonHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61DF1B199928002639D7 /* CommonHomeViewController.m */; };
 		DABF319E1B4BBD1300F42873 /* BaseCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF319D1B4BBD1300F42873 /* BaseCode.framework */; };
 		DABF31CD1B4BC8B600F42873 /* CoreMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF31CC1B4BC8B600F42873 /* CoreMacro.framework */; };
+		DAE189981B4CFAF9009620E2 /* ClickButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE189961B4CFAF9009620E2 /* ClickButton.h */; };
+		DAE189991B4CFAF9009620E2 /* ClickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE189971B4CFAF9009620E2 /* ClickButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		DA8B61DF1B199928002639D7 /* CommonHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHomeViewController.m; sourceTree = "<group>"; };
 		DABF319D1B4BBD1300F42873 /* BaseCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseCode.framework; path = "../BaseCode/build/Debug-iphoneos/BaseCode.framework"; sourceTree = "<group>"; };
 		DABF31CC1B4BC8B600F42873 /* CoreMacro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMacro.framework; path = "../CoreMacro/build/Debug-iphoneos/CoreMacro.framework"; sourceTree = "<group>"; };
+		DAE189961B4CFAF9009620E2 /* ClickButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickButton.h; sourceTree = "<group>"; };
+		DAE189971B4CFAF9009620E2 /* ClickButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 		DA8B61D71B1998EA002639D7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DAE189961B4CFAF9009620E2 /* ClickButton.h */,
+				DAE189971B4CFAF9009620E2 /* ClickButton.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +177,7 @@
 			files = (
 				DA8B61BC1B1995E1002639D7 /* Home.h in Headers */,
 				DA8B61E01B199928002639D7 /* CommonHomeViewController.h in Headers */,
+				DAE189981B4CFAF9009620E2 /* ClickButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE189991B4CFAF9009620E2 /* ClickButton.m in Sources */,
 				DA8B61E11B199928002639D7 /* CommonHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

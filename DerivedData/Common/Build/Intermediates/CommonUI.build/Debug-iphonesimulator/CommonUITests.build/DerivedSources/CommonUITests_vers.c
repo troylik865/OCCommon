@@ -1,1 +1,0 @@
- const unsigned char CommonUITestsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:CommonUITests  PROJECT:CommonUI-1" "\n"; const double CommonUITestsVersionNumber __attribute__ ((used)) = (double)1.;
