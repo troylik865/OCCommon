@@ -19,13 +19,22 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
     self.navigationController.navigationBarHidden = YES;
-    ClickButton *button = [[ClickButton alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
-    button.backgroundColor = [UIColor blackColor];
-    button.block = ^(int a,int b) {
-        return a + b;
-    };
-    [self.view addSubview:button];
+    CommonMessage *message = [[CommonMessage alloc] initWithHttpUrl:@"https://gtms01.alicdn.com/tps/i1/TB19acUIpXXXXX2XXXXvKyzTVXX-520-280.jpg" params:nil];
+    [self sendMessage:message];
 }
+
+
+-(void)messageSuccess:(CommonMessage *)message {
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    typeof(UIImageView) *weakSelf = imageView;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        imageView.image = [UIImage imageWithData:message.data];
+        [self.view addSubview:imageView];
+    });
+    
+}
+
+
 
 -(UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleDefault;

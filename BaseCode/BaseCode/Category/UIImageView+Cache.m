@@ -20,7 +20,7 @@
         UIImage *image = [UIImage imageLoader:defaultUrl];
         self.image = image;
     }
-    [CoreHttpService getDataWithURL:url block:^(NSData *data) {
+    [CoreHttpService getDataWithURL:url block:^(NSData *data,NSError *connectionError) {
         dispatch_async(dispatch_get_main_queue(), ^{
            self.image = [UIImage imageWithData:data];
         });

@@ -10,6 +10,9 @@
 		DA012A961B4BB92400446BA7 /* BaseCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA012A951B4BB92400446BA7 /* BaseCode.framework */; };
 		DA1FD6121B4A845A0094B6D5 /* CommonBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1FD6101B4A845A0094B6D5 /* CommonBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA1FD6131B4A845A0094B6D5 /* CommonBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1FD6111B4A845A0094B6D5 /* CommonBaseView.m */; };
+		DA2A67F91B4E68EF00CA1801 /* CommonMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2A67F71B4E68EF00CA1801 /* CommonMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA2A67FA1B4E68EF00CA1801 /* CommonMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A67F81B4E68EF00CA1801 /* CommonMessage.m */; };
+		DA2A67FC1B4E69C600CA1801 /* CoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2A67FB1B4E69C600CA1801 /* CoreService.framework */; };
 		DA8B615C1B198562002639D7 /* CommonUI.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8B615B1B198562002639D7 /* CommonUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA8B61621B198562002639D7 /* CommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8B61561B198562002639D7 /* CommonUI.framework */; };
 		DA8B61691B198562002639D7 /* CommonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61681B198562002639D7 /* CommonUITests.m */; };
@@ -33,6 +36,9 @@
 		DA1FD6101B4A845A0094B6D5 /* CommonBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonBaseView.h; sourceTree = "<group>"; };
 		DA1FD6111B4A845A0094B6D5 /* CommonBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonBaseView.m; sourceTree = "<group>"; };
 		DA1FD6141B4A849F0094B6D5 /* CommonUIMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUIMacro.h; sourceTree = "<group>"; };
+		DA2A67F71B4E68EF00CA1801 /* CommonMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMessage.h; sourceTree = "<group>"; };
+		DA2A67F81B4E68EF00CA1801 /* CommonMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMessage.m; sourceTree = "<group>"; };
+		DA2A67FB1B4E69C600CA1801 /* CoreService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreService.framework; path = "../CoreService/build/Debug-iphoneos/CoreService.framework"; sourceTree = "<group>"; };
 		DA8B61561B198562002639D7 /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B615A1B198562002639D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8B615B1B198562002639D7 /* CommonUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUI.h; sourceTree = "<group>"; };
@@ -48,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2A67FC1B4E69C600CA1801 /* CoreService.framework in Frameworks */,
 				DA012A961B4BB92400446BA7 /* BaseCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,9 +79,19 @@
 			path = BaseUI;
 			sourceTree = "<group>";
 		};
+		DA2A67F61B4E68DD00CA1801 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				DA2A67F71B4E68EF00CA1801 /* CommonMessage.h */,
+				DA2A67F81B4E68EF00CA1801 /* CommonMessage.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
 		DA8B614C1B198562002639D7 = {
 			isa = PBXGroup;
 			children = (
+				DA2A67FB1B4E69C600CA1801 /* CoreService.framework */,
 				DA012A951B4BB92400446BA7 /* BaseCode.framework */,
 				DA8B61581B198562002639D7 /* CommonUI */,
 				DA8B61651B198562002639D7 /* CommonUITests */,
@@ -96,6 +113,7 @@
 			children = (
 				DA1FD60F1B4A845A0094B6D5 /* BaseUI */,
 				DAB1631C1B199ED200C23A73 /* Page */,
+				DA2A67F61B4E68DD00CA1801 /* Message */,
 				DA8B617A1B19874D002639D7 /* FunctionUI */,
 				DA8B615B1B198562002639D7 /* CommonUI.h */,
 				DA8B61591B198562002639D7 /* Supporting Files */,
@@ -156,6 +174,7 @@
 				DA8B615C1B198562002639D7 /* CommonUI.h in Headers */,
 				DA1FD6121B4A845A0094B6D5 /* CommonBaseView.h in Headers */,
 				DAB163231B199F2600C23A73 /* CommonPageViewController.h in Headers */,
+				DA2A67F91B4E68EF00CA1801 /* CommonMessage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB163241B199F2600C23A73 /* CommonPageViewController.m in Sources */,
+				DA2A67FA1B4E68EF00CA1801 /* CommonMessage.m in Sources */,
 				DA1FD6131B4A845A0094B6D5 /* CommonBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+@class CommonMessage;
 
 @interface CommonPageViewController : UIViewController
+
+
+- (void)sendMessage:(CommonMessage *)message;
+
+
+- (void)messageSuccess:(CommonMessage *)message;
+
+- (void)messageFailed:(CommonMessage *)message;
+
+- (void)messageCancel:(CommonMessage *)message;
+
 
 @end

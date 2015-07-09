@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA09100A1B4BB4D900BD3521 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0910091B4BB4D900BD3521 /* Home.framework */; };
+		DA24589C1B4E60700006EFD5 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA24589B1B4E60700006EFD5 /* 1.png */; };
 		DA8B61291B19853D002639D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61281B19853D002639D7 /* main.m */; };
 		DA8B612C1B19853D002639D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B612B1B19853D002639D7 /* AppDelegate.m */; };
 		DA8B61321B19853D002639D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B61301B19853D002639D7 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		DA0910091B4BB4D900BD3521 /* Home.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Home.framework; path = "../Home/build/Debug-iphoneos/Home.framework"; sourceTree = "<group>"; };
+		DA24589B1B4E60700006EFD5 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		DA8B61231B19853D002639D7 /* Portal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B61271B19853D002639D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8B61281B19853D002639D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		DA8B61261B19853D002639D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA24589B1B4E60700006EFD5 /* 1.png */,
 				DA8B61271B19853D002639D7 /* Info.plist */,
 				DA8B61281B19853D002639D7 /* main.m */,
 				DA8B61AB1B19942E002639D7 /* PortalMacro.h */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA8B61321B19853D002639D7 /* Main.storyboard in Resources */,
+				DA24589C1B4E60700006EFD5 /* 1.png in Resources */,
 				DA8B61371B19853D002639D7 /* LaunchScreen.xib in Resources */,
 				DA8B61341B19853D002639D7 /* Images.xcassets in Resources */,
 			);

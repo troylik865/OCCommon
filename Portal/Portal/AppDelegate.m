@@ -20,7 +20,42 @@
     NSString *controllerName = @"CommonHomeViewController";
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[NSClassFromString(controllerName) alloc] init]];
     self.window.rootViewController = navigationController;
+    [self registerForRemoteNotification];
     return YES;
+}
+
+- (void)registerForRemoteNotification {
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+        UIUserNotificationType types = UIUserNotificationTypeSound | UIUserNotificationTypeBadge | UIUserNotificationTypeAlert;
+        UIUserNotificationSettings *notificationSettings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:notificationSettings];
+    } else {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    }
+}
+
+#ifdef __IPHONE_8_0
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+    [application registerForRemoteNotifications];
+}
+#endif
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification*)notification {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"接收到本地提醒 in app"
+                          
+                                                    message:notification.alertBody
+                          
+                                                   delegate:nil
+                          
+                                          cancelButtonTitle:@"确定"
+                          
+                                          otherButtonTitles:nil];
+    
+    [alert show];
+    
+    //这里，你就可以通过notification的useinfo，干一些你想做的事情了
+    
+    application.applicationIconBadgeNumber = 0;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

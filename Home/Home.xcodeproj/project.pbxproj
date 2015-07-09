@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		DA0910011B4BB3D400BD3521 /* CommonUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonUI.framework; path = "../CommonUI/build/Debug-iphoneos/CommonUI.framework"; sourceTree = "<group>"; };
+		DA2A67F41B4E662100CA1801 /* CoreService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreService.framework; path = "../CoreService/build/Debug-iphoneos/CoreService.framework"; sourceTree = "<group>"; };
 		DA8B61B61B1995E1002639D7 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B61BA1B1995E1002639D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8B61BB1B1995E1002639D7 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		DA8B61AC1B1995E1002639D7 = {
 			isa = PBXGroup;
 			children = (
+				DA2A67F41B4E662100CA1801 /* CoreService.framework */,
 				DABF31CC1B4BC8B600F42873 /* CoreMacro.framework */,
 				DABF319D1B4BBD1300F42873 /* BaseCode.framework */,
 				DA0910011B4BB3D400BD3521 /* CommonUI.framework */,

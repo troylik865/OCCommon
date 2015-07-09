@@ -11,16 +11,16 @@
 
 @implementation CoreHttpService
 
-+(void)getDataWithURL:(NSString *)url block:(void (^)(NSData* data)) block {
++(void)getDataWithURL:(NSString *)url block:(void (^)(NSData* data,NSError *connectionError)) block {
     
     if(STRING_IS_BLANK(url)) {
-        block(nil);
+        block(nil,nil);
         return;
     }
     
     NSURL *realUrl = [NSURL URLWithString:url];
     if(!realUrl) {
-        block(nil);
+        block(nil,nil);
         return;
     }
     
@@ -31,15 +31,15 @@
      */
     NSString *md5Name = [url md5];
     NSFileManager *manager = [NSFileManager defaultManager];
-    NSString *filePath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:md5Name];
+    NSString *filePath = [[[NSHomeDirectory() stringByAppendingPathComponent:@"Library"] stringByAppendingPathComponent:@"Cache"] stringByAppendingPathComponent:md5Name];
     if([manager fileExistsAtPath:filePath]){
         NSData *data = [manager contentsAtPath:filePath];
-        block(data);
+        block(data,nil);
     } else {
         [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:realUrl] queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-            block(data);
+            block(data,connectionError);
             
-            if(!data || !connectionError) {
+            if(!data || connectionError) {
                 return;
             }
             //将文件写入

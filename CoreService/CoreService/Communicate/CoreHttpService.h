@@ -10,7 +10,7 @@
 
 @interface CoreHttpService : NSObject
 
-+(void)getDataWithURL:(NSString *)url block:(void (^)(NSData* data)) block;
++ (void)getDataWithURL:(NSString *)url block:(void (^)(NSData *data, NSError *connectionError))block;
 
 
 @end
