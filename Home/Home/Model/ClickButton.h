@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef int (^clickBlock) (int a , int b);
+typedef void (^clickBlock) ();
 
 @interface ClickButton : UIButton
 

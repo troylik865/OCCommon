@@ -18,3 +18,4 @@ FOUNDATION_EXPORT const unsigned char CoreMacroVersionString[];
 
 
 #import <CoreMacro/CoreMacroDefine.h>
+#import <CoreMacro/JSONKit.h>

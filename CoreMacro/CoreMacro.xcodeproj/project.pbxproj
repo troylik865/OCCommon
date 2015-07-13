@@ -11,6 +11,8 @@
 		DABF31B71B4BC7C900F42873 /* CoreMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF31AB1B4BC7C900F42873 /* CoreMacro.framework */; };
 		DABF31BE1B4BC7C900F42873 /* CoreMacroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF31BD1B4BC7C900F42873 /* CoreMacroTests.m */; };
 		DABF31C91B4BC88700F42873 /* CoreMacroDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = DABF31C71B4BC80800F42873 /* CoreMacroDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAF3C9EC1B4F756C00A5E5A9 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF3C9EA1B4F756C00A5E5A9 /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAF3C9ED1B4F756C00A5E5A9 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF3C9EB1B4F756C00A5E5A9 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		DABF31BD1B4BC7C900F42873 /* CoreMacroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreMacroTests.m; sourceTree = "<group>"; };
 		DABF31C71B4BC80800F42873 /* CoreMacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreMacroDefine.h; sourceTree = "<group>"; };
 		DABF31C81B4BC82200F42873 /* CoreMacro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreMacro-Prefix.pch"; sourceTree = "<group>"; };
+		DAF3C9EA1B4F756C00A5E5A9 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		DAF3C9EB1B4F756C00A5E5A9 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		DABF31AD1B4BC7C900F42873 /* CoreMacro */ = {
 			isa = PBXGroup;
 			children = (
+				DAF3C9E91B4F756C00A5E5A9 /* ThirdLibrary */,
 				DABF31B01B4BC7C900F42873 /* CoreMacro.h */,
 				DABF31AE1B4BC7C900F42873 /* Supporting Files */,
 				DABF31C71B4BC80800F42873 /* CoreMacroDefine.h */,
@@ -107,6 +112,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DAF3C9E91B4F756C00A5E5A9 /* ThirdLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				DAF3C9EA1B4F756C00A5E5A9 /* JSONKit.h */,
+				DAF3C9EB1B4F756C00A5E5A9 /* JSONKit.m */,
+			);
+			path = ThirdLibrary;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -116,6 +130,7 @@
 			files = (
 				DABF31B11B4BC7C900F42873 /* CoreMacro.h in Headers */,
 				DABF31C91B4BC88700F42873 /* CoreMacroDefine.h in Headers */,
+				DAF3C9EC1B4F756C00A5E5A9 /* JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF3C9ED1B4F756C00A5E5A9 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +422,7 @@
 				DABF31C31B4BC7C900F42873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DABF31C41B4BC7C900F42873 /* Build configuration list for PBXNativeTarget "CoreMacroTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +431,7 @@
 				DABF31C61B4BC7C900F42873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

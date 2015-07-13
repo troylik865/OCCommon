@@ -14,4 +14,6 @@
 
 + (NSString *)insert:(NSArray *)strs separation:(NSString *)sep;
 
+- (NSDictionary *)dictionaryWithJsonString;
+
 @end

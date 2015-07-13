@@ -10,9 +10,9 @@
 
 @implementation CommonMessage
 
--(instancetype)initWithApiName:(NSString *)apiName params:(NSDictionary *)params version:(NSString *)version {
+- (instancetype)initWithApiName:(NSString *)apiName params:(NSDictionary *)params version:(NSString *)version {
     self = [super init];
-    if(self) {
+    if (self) {
         _apiName = apiName;
         _params = params;
         _version = version;
@@ -21,20 +21,25 @@
     return self;
 }
 
--(instancetype)initWithHttpUrl:(NSString *)url params:(NSDictionary *)params {
+- (instancetype)initWithHttpUrl:(NSString *)url params:(NSDictionary *)params {
     return [self initWithHttpUrl:url params:params method:@"get"];
 }
 
-
--(instancetype)initWithHttpUrl:(NSString *)url params:(NSDictionary *)params method:(NSString *)method {
+- (instancetype)initWithHttpUrl:(NSString *)url params:(NSDictionary *)params method:(NSString *)method {
     self = [super init];
-    if(self) {
+    if (self) {
         _apiName = url;
         _params = params;
-        _type = [[method lowercaseString] isEqualToString:@"post"]?MessageTypeHttpPOST:MessageTypeHttpGET;
+        _type = [[method lowercaseString] isEqualToString:@"post"] ? MessageTypeHttpPOST : MessageTypeHttpGET;
     }
     return self;
 }
 
+- (NSDictionary *)getDictionaryData {
+    return [NSJSONSerialization
+            JSONObjectWithData:self.data
+            options:NSJSONReadingMutableLeaves
+            error:nil];
+}
 
 @end

@@ -46,24 +46,41 @@
         } else {
             realUrl = message.apiName;
         }
-        typeof(CommonMessage) *weakMessage = message;
-        typeof(CommonPageViewController) *weakSelf = self;
+        __weak CommonPageViewController *weakSelf = self;
         [CoreHttpService getDataWithURL:realUrl block:^(NSData *data,NSError *connectionError) {
             if(data) {
-                weakMessage.data = data;
+                message.data = data;
                 if([weakSelf respondsToSelector:@selector(messageSuccess:)]) {
-                    [weakSelf performSelector:@selector(messageSuccess:) withObject:weakMessage];
+                    [weakSelf performSelectorOnMainThread:@selector(messageSuccess:) withObject:message waitUntilDone:NO];
                 }
             } else {
                 if([weakSelf respondsToSelector:@selector(messageFailed:)]) {
-                    [weakSelf performSelector:@selector(messageFailed:) withObject:weakMessage];
+                    [weakSelf performSelectorOnMainThread:@selector(messageFailed:) withObject:message waitUntilDone:NO];
                 }
             }
         }];
     }
     else if (message.type == MessageTypeHttpPOST) {
+        __weak CommonPageViewController *weakSelf = self;
+        [CoreHttpService getDataWithUURL:message.apiName params:message.params method:@"post" needCache:NO block:^(NSData * data, NSError *connectionError) {
+            if(data) {
+                message.data = data;
+                if([weakSelf respondsToSelector:@selector(messageSuccess:)]) {
+                    [weakSelf performSelectorOnMainThread:@selector(messageSuccess:) withObject:message waitUntilDone:NO];
+                }
+            } else {
+                if([weakSelf respondsToSelector:@selector(messageFailed:)]) {
+                    [weakSelf performSelectorOnMainThread:@selector(messageFailed:) withObject:message waitUntilDone:NO];
+                }
+            }
+
+        }];
     }
+    
+    //封装了协议的通讯方式（待有服务端配合的时候实现）
     else if (message.type == MessageTypeCommon) {
+        
+        
     }
 }
 

@@ -20,9 +20,14 @@
         UIImage *image = [UIImage imageLoader:defaultUrl];
         self.image = image;
     }
+    __weak typeof(UIImageView) *weakSelf = self;
     [CoreHttpService getDataWithURL:url block:^(NSData *data,NSError *connectionError) {
+        if(connectionError) {
+            return;
+        }
+        UIImage *image = [UIImage imageWithData:data];
         dispatch_async(dispatch_get_main_queue(), ^{
-           self.image = [UIImage imageWithData:data];
+           weakSelf.image = image;
         });
     }];
 }

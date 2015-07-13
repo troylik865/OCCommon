@@ -15,6 +15,7 @@
 		DA8B61E11B199928002639D7 /* CommonHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61DF1B199928002639D7 /* CommonHomeViewController.m */; };
 		DABF319E1B4BBD1300F42873 /* BaseCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF319D1B4BBD1300F42873 /* BaseCode.framework */; };
 		DABF31CD1B4BC8B600F42873 /* CoreMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF31CC1B4BC8B600F42873 /* CoreMacro.framework */; };
+		DADAA8AC1B4FA345008073C6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADAA8AB1B4FA345008073C6 /* MediaPlayer.framework */; };
 		DAE189981B4CFAF9009620E2 /* ClickButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE189961B4CFAF9009620E2 /* ClickButton.h */; };
 		DAE189991B4CFAF9009620E2 /* ClickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE189971B4CFAF9009620E2 /* ClickButton.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,8 @@
 		DA8B61DF1B199928002639D7 /* CommonHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHomeViewController.m; sourceTree = "<group>"; };
 		DABF319D1B4BBD1300F42873 /* BaseCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseCode.framework; path = "../BaseCode/build/Debug-iphoneos/BaseCode.framework"; sourceTree = "<group>"; };
 		DABF31CC1B4BC8B600F42873 /* CoreMacro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMacro.framework; path = "../CoreMacro/build/Debug-iphoneos/CoreMacro.framework"; sourceTree = "<group>"; };
+		DADAA8AB1B4FA345008073C6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		DADAA8AD1B4FA680008073C6 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		DAE189961B4CFAF9009620E2 /* ClickButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickButton.h; sourceTree = "<group>"; };
 		DAE189971B4CFAF9009620E2 /* ClickButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADAA8AC1B4FA345008073C6 /* MediaPlayer.framework in Frameworks */,
 				DABF31CD1B4BC8B600F42873 /* CoreMacro.framework in Frameworks */,
 				DABF319E1B4BBD1300F42873 /* BaseCode.framework in Frameworks */,
 				DA0910021B4BB3D400BD3521 /* CommonUI.framework in Frameworks */,
@@ -72,6 +76,7 @@
 		DA8B61AC1B1995E1002639D7 = {
 			isa = PBXGroup;
 			children = (
+				DADAA8AB1B4FA345008073C6 /* MediaPlayer.framework */,
 				DA2A67F41B4E662100CA1801 /* CoreService.framework */,
 				DABF31CC1B4BC8B600F42873 /* CoreMacro.framework */,
 				DABF319D1B4BBD1300F42873 /* BaseCode.framework */,
@@ -107,6 +112,7 @@
 		DA8B61B91B1995E1002639D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DADAA8AD1B4FA680008073C6 /* test.mp4 */,
 				DA8B61BA1B1995E1002639D7 /* Info.plist */,
 				DA8B61D41B199618002639D7 /* Home-Prefix.pch */,
 			);

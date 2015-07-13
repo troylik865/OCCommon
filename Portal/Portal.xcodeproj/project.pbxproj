@@ -18,6 +18,7 @@
 		DA8B61E41B199B04002639D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61E31B199B04002639D7 /* ViewController.m */; };
 		DABF31A01B4BBD1900F42873 /* BaseCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF319F1B4BBD1900F42873 /* BaseCode.framework */; };
 		DABF31CB1B4BC8B000F42873 /* CoreMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF31CA1B4BC8B000F42873 /* CoreMacro.framework */; };
+		DADAA8AF1B52988B008073C6 /* page@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DADAA8AE1B52988B008073C6 /* page@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DA8B61E31B199B04002639D7 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DABF319F1B4BBD1900F42873 /* BaseCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseCode.framework; path = "../BaseCode/build/Debug-iphoneos/BaseCode.framework"; sourceTree = "<group>"; };
 		DABF31CA1B4BC8B000F42873 /* CoreMacro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMacro.framework; path = "../CoreMacro/build/Debug-iphoneos/CoreMacro.framework"; sourceTree = "<group>"; };
+		DADAA8AE1B52988B008073C6 /* page@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		DA8B61261B19853D002639D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DADAA8AE1B52988B008073C6 /* page@2x.png */,
 				DA24589B1B4E60700006EFD5 /* 1.png */,
 				DA8B61271B19853D002639D7 /* Info.plist */,
 				DA8B61281B19853D002639D7 /* main.m */,
@@ -222,6 +225,7 @@
 			files = (
 				DA8B61321B19853D002639D7 /* Main.storyboard in Resources */,
 				DA24589C1B4E60700006EFD5 /* 1.png in Resources */,
+				DADAA8AF1B52988B008073C6 /* page@2x.png in Resources */,
 				DA8B61371B19853D002639D7 /* LaunchScreen.xib in Resources */,
 				DA8B61341B19853D002639D7 /* Images.xcassets in Resources */,
 			);
@@ -385,6 +389,7 @@
 				INFOPLIST_FILE = Portal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -406,6 +411,7 @@
 				INFOPLIST_FILE = Portal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

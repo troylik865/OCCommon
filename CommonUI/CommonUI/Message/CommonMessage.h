@@ -77,4 +77,11 @@ typedef enum {
  */
 - (instancetype)initWithApiName:(NSString *)apiName params:(NSDictionary *)params version:(NSString *)version;
 
+/**
+ *  获取字典类型的数据
+ *
+ *  @returns 字典类型
+ */
+- (NSDictionary *)getDictionaryData;
+
 @end

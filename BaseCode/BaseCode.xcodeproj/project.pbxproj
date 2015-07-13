@@ -22,6 +22,8 @@
 		DA1FD69D1B4BAD1E0094B6D5 /* UIImageView+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1FD6951B4BAD1E0094B6D5 /* UIImageView+Cache.m */; };
 		DABF31971B4BBAAA00F42873 /* CoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF31961B4BBAAA00F42873 /* CoreService.framework */; };
 		DABF31CF1B4BC8BD00F42873 /* CoreMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF31CE1B4BC8BD00F42873 /* CoreMacro.framework */; };
+		DADAA8B21B535E79008073C6 /* UIColor+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8B01B535E79008073C6 /* UIColor+Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADAA8B31B535E79008073C6 /* UIColor+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8B11B535E79008073C6 /* UIColor+Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		DA1FD69E1B4BAD5A0094B6D5 /* BaseCodeMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCodeMacro.h; sourceTree = "<group>"; };
 		DABF31961B4BBAAA00F42873 /* CoreService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreService.framework; path = "../CoreService/build/Debug-iphoneos/CoreService.framework"; sourceTree = "<group>"; };
 		DABF31CE1B4BC8BD00F42873 /* CoreMacro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMacro.framework; path = "../CoreMacro/build/Debug-iphoneos/CoreMacro.framework"; sourceTree = "<group>"; };
+		DADAA8B01B535E79008073C6 /* UIColor+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Common.h"; sourceTree = "<group>"; };
+		DADAA8B11B535E79008073C6 /* UIColor+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Common.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 				DA1FD6931B4BAD1E0094B6D5 /* UIImage+Common.m */,
 				DA1FD6941B4BAD1E0094B6D5 /* UIImageView+Cache.h */,
 				DA1FD6951B4BAD1E0094B6D5 /* UIImageView+Cache.m */,
+				DADAA8B01B535E79008073C6 /* UIColor+Common.h */,
+				DADAA8B11B535E79008073C6 /* UIColor+Common.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -169,6 +175,7 @@
 				DA1FD6961B4BAD1E0094B6D5 /* NSString+Common.h in Headers */,
 				DA1FD69A1B4BAD1E0094B6D5 /* UIImage+Common.h in Headers */,
 				DA012A971B4BB9B300446BA7 /* BaseCodeMacro.h in Headers */,
+				DADAA8B21B535E79008073C6 /* UIColor+Common.h in Headers */,
 				DA090FFA1B4BAF7D00BD3521 /* BaseCode-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +280,7 @@
 				DA1FD69D1B4BAD1E0094B6D5 /* UIImageView+Cache.m in Sources */,
 				DA1FD69B1B4BAD1E0094B6D5 /* UIImage+Common.m in Sources */,
 				DA1FD6991B4BAD1E0094B6D5 /* RangeModel.m in Sources */,
+				DADAA8B31B535E79008073C6 /* UIColor+Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

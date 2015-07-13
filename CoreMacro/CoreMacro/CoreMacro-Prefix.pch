@@ -10,5 +10,6 @@
 #define CoreMacro_CoreMacro_Prefix_pch
 
 #import "CoreMacroDefine.h"
+#import "JSONKit.h"
 
 #endif

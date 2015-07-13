@@ -16,3 +16,6 @@
 
 #import <CommonUI/CommonUI.h>
 #import <BaseCode/BaseCode.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <CoreMacro/CoreMacro.h>
+#import <CoreService/CoreService.h>

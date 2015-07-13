@@ -12,5 +12,9 @@
 
 + (void)getDataWithURL:(NSString *)url block:(void (^)(NSData *data, NSError *connectionError))block;
 
++ (void)getDataWithURL:(NSString *)url needCache:(BOOL)needCache block:(void (^)(NSData *data, NSError *connectionError))block;
+
++ (void)getDataWithUURL:(NSString *)url params:(NSDictionary *)params method:(NSString *)method needCache:(BOOL)needCache block:(void (^)(NSData *, NSError *))block;
+
 
 @end

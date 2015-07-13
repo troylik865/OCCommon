@@ -16,5 +16,13 @@
 #define DICTIONARY_IS_EMPTY(dic) ((dic)==nil || ![(dic) isKindOfClass:[NSDictionary class]] || (dic).count < 1)
 #define ARRAY_IS_EMPTY(array) ((array)==nil || ![(array) isKindOfClass:[NSArray class]] || (array).count < 1)
 
+#define COMMON_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define COMMON_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define SafeRelease(obj) if(obj) obj = nil
+
+//判断系统版本
+#define iOSVersionGreaterThan(v)          ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+
 
 #endif
