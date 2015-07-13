@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    NSString *controllerName = @"CommonHomeViewController";
+    NSString *controllerName = @"CommonMusicHomeController";
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[NSClassFromString(controllerName) alloc] init]];
     self.window.rootViewController = navigationController;
     [self registerForRemoteNotification];

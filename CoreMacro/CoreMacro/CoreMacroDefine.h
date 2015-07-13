@@ -16,6 +16,12 @@
 #define DICTIONARY_IS_EMPTY(dic) ((dic)==nil || ![(dic) isKindOfClass:[NSDictionary class]] || (dic).count < 1)
 #define ARRAY_IS_EMPTY(array) ((array)==nil || ![(array) isKindOfClass:[NSArray class]] || (array).count < 1)
 
+//如果从字典中获取到的数据为空的情况下，默认返回空字符串
+#define DEFAULT_BLANK_IN_DICTIONARY(data,key) [data objectForKey:key] == nil?@"":[data objectForKey:key]
+
+//如果对象不为空的情况下 放入字典
+#define ADD_TO_DIC_IF_NOT_NULL(obj,params,key) if(obj!=nil)[params setObject:obj forKey:key]
+
 #define COMMON_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define COMMON_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
@@ -24,5 +30,7 @@
 //判断系统版本
 #define iOSVersionGreaterThan(v)          ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
 
+//navigationBar高度
+#define COMMON_NAVIBAR_HEIGHT 44
 
 #endif

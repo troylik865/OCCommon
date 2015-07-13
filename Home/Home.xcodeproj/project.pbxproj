@@ -11,11 +11,15 @@
 		DA8B61BC1B1995E1002639D7 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8B61BB1B1995E1002639D7 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA8B61C21B1995E1002639D7 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8B61B61B1995E1002639D7 /* Home.framework */; };
 		DA8B61C91B1995E1002639D7 /* HomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61C81B1995E1002639D7 /* HomeTests.m */; };
-		DA8B61E01B199928002639D7 /* CommonHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8B61DE1B199928002639D7 /* CommonHomeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA8B61E11B199928002639D7 /* CommonHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61DF1B199928002639D7 /* CommonHomeViewController.m */; };
 		DABF319E1B4BBD1300F42873 /* BaseCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF319D1B4BBD1300F42873 /* BaseCode.framework */; };
 		DABF31CD1B4BC8B600F42873 /* CoreMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF31CC1B4BC8B600F42873 /* CoreMacro.framework */; };
 		DADAA8AC1B4FA345008073C6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADAA8AB1B4FA345008073C6 /* MediaPlayer.framework */; };
+		DADAA8CE1B5362D6008073C6 /* CommonHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8C51B5362D6008073C6 /* CommonHomeViewController.h */; };
+		DADAA8CF1B5362D6008073C6 /* CommonHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8C61B5362D6008073C6 /* CommonHomeViewController.m */; };
+		DADAA8D01B5362D6008073C6 /* CommonMusicHomeController.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8CA1B5362D6008073C6 /* CommonMusicHomeController.h */; };
+		DADAA8D11B5362D6008073C6 /* CommonMusicHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8CB1B5362D6008073C6 /* CommonMusicHomeController.m */; };
+		DADAA8D41B536384008073C6 /* CommonMusicChannelView.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8D21B536384008073C6 /* CommonMusicChannelView.h */; };
+		DADAA8D51B536384008073C6 /* CommonMusicChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8D31B536384008073C6 /* CommonMusicChannelView.m */; };
 		DAE189981B4CFAF9009620E2 /* ClickButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE189961B4CFAF9009620E2 /* ClickButton.h */; };
 		DAE189991B4CFAF9009620E2 /* ClickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE189971B4CFAF9009620E2 /* ClickButton.m */; };
 /* End PBXBuildFile section */
@@ -40,12 +44,17 @@
 		DA8B61C71B1995E1002639D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8B61C81B1995E1002639D7 /* HomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTests.m; sourceTree = "<group>"; };
 		DA8B61D41B199618002639D7 /* Home-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Home-Prefix.pch"; sourceTree = "<group>"; };
-		DA8B61DE1B199928002639D7 /* CommonHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHomeViewController.h; sourceTree = "<group>"; };
-		DA8B61DF1B199928002639D7 /* CommonHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHomeViewController.m; sourceTree = "<group>"; };
 		DABF319D1B4BBD1300F42873 /* BaseCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseCode.framework; path = "../BaseCode/build/Debug-iphoneos/BaseCode.framework"; sourceTree = "<group>"; };
 		DABF31CC1B4BC8B600F42873 /* CoreMacro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMacro.framework; path = "../CoreMacro/build/Debug-iphoneos/CoreMacro.framework"; sourceTree = "<group>"; };
 		DADAA8AB1B4FA345008073C6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		DADAA8AD1B4FA680008073C6 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		DADAA8C51B5362D6008073C6 /* CommonHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHomeViewController.h; sourceTree = "<group>"; };
+		DADAA8C61B5362D6008073C6 /* CommonHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHomeViewController.m; sourceTree = "<group>"; };
+		DADAA8CA1B5362D6008073C6 /* CommonMusicHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMusicHomeController.h; sourceTree = "<group>"; };
+		DADAA8CB1B5362D6008073C6 /* CommonMusicHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMusicHomeController.m; sourceTree = "<group>"; };
+		DADAA8D21B536384008073C6 /* CommonMusicChannelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMusicChannelView.h; sourceTree = "<group>"; };
+		DADAA8D31B536384008073C6 /* CommonMusicChannelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMusicChannelView.m; sourceTree = "<group>"; };
+		DADAA8DE1B536E91008073C6 /* Home-API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Home-API.h"; sourceTree = "<group>"; };
 		DAE189961B4CFAF9009620E2 /* ClickButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickButton.h; sourceTree = "<group>"; };
 		DAE189971B4CFAF9009620E2 /* ClickButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +124,7 @@
 				DADAA8AD1B4FA680008073C6 /* test.mp4 */,
 				DA8B61BA1B1995E1002639D7 /* Info.plist */,
 				DA8B61D41B199618002639D7 /* Home-Prefix.pch */,
+				DADAA8DE1B536E91008073C6 /* Home-API.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -163,8 +173,8 @@
 		DA8B61D81B1998EA002639D7 /* Page */ = {
 			isa = PBXGroup;
 			children = (
-				DA8B61DE1B199928002639D7 /* CommonHomeViewController.h */,
-				DA8B61DF1B199928002639D7 /* CommonHomeViewController.m */,
+				DADAA8C41B5362D6008073C6 /* Home */,
+				DADAA8C71B5362D6008073C6 /* Music */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -176,6 +186,58 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		DADAA8C41B5362D6008073C6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DADAA8C51B5362D6008073C6 /* CommonHomeViewController.h */,
+				DADAA8C61B5362D6008073C6 /* CommonHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DADAA8C71B5362D6008073C6 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				DADAA8C81B5362D6008073C6 /* Channel */,
+				DADAA8C91B5362D6008073C6 /* Home */,
+				DADAA8CC1B5362D6008073C6 /* PlayList */,
+				DADAA8CD1B5362D6008073C6 /* SongMain */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		DADAA8C81B5362D6008073C6 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				DADAA8D21B536384008073C6 /* CommonMusicChannelView.h */,
+				DADAA8D31B536384008073C6 /* CommonMusicChannelView.m */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		DADAA8C91B5362D6008073C6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DADAA8CA1B5362D6008073C6 /* CommonMusicHomeController.h */,
+				DADAA8CB1B5362D6008073C6 /* CommonMusicHomeController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DADAA8CC1B5362D6008073C6 /* PlayList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PlayList;
+			sourceTree = "<group>";
+		};
+		DADAA8CD1B5362D6008073C6 /* SongMain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SongMain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -183,9 +245,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADAA8D01B5362D6008073C6 /* CommonMusicHomeController.h in Headers */,
 				DA8B61BC1B1995E1002639D7 /* Home.h in Headers */,
-				DA8B61E01B199928002639D7 /* CommonHomeViewController.h in Headers */,
 				DAE189981B4CFAF9009620E2 /* ClickButton.h in Headers */,
+				DADAA8D41B536384008073C6 /* CommonMusicChannelView.h in Headers */,
+				DADAA8CE1B5362D6008073C6 /* CommonHomeViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADAA8CF1B5362D6008073C6 /* CommonHomeViewController.m in Sources */,
+				DADAA8D51B536384008073C6 /* CommonMusicChannelView.m in Sources */,
 				DAE189991B4CFAF9009620E2 /* ClickButton.m in Sources */,
-				DA8B61E11B199928002639D7 /* CommonHomeViewController.m in Sources */,
+				DADAA8D11B5362D6008073C6 /* CommonMusicHomeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
