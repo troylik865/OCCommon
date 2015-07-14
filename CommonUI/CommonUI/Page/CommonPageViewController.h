@@ -11,6 +11,12 @@
 
 @interface CommonPageViewController : UIViewController
 
+@property (nonatomic, strong) NSDictionary *pageParams;
+
+@property (nonatomic, strong) UIView *contentView;
+
+- (BOOL) isNeedBackButton;
+
 
 - (void)sendMessage:(CommonMessage *)message;
 
@@ -20,6 +26,5 @@
 - (void)messageFailed:(CommonMessage *)message;
 
 - (void)messageCancel:(CommonMessage *)message;
-
 
 @end

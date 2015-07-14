@@ -8,28 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		DABF31B11B4BC7C900F42873 /* CoreMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = DABF31B01B4BC7C900F42873 /* CoreMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABF31B71B4BC7C900F42873 /* CoreMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF31AB1B4BC7C900F42873 /* CoreMacro.framework */; };
-		DABF31BE1B4BC7C900F42873 /* CoreMacroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF31BD1B4BC7C900F42873 /* CoreMacroTests.m */; };
 		DABF31C91B4BC88700F42873 /* CoreMacroDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = DABF31C71B4BC80800F42873 /* CoreMacroDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAF3C9EC1B4F756C00A5E5A9 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF3C9EA1B4F756C00A5E5A9 /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAF3C9ED1B4F756C00A5E5A9 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF3C9EB1B4F756C00A5E5A9 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		DABF31B81B4BC7C900F42873 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DABF31A21B4BC7C900F42873 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DABF31AA1B4BC7C900F42873;
-			remoteInfo = CoreMacro;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		DABF31AB1B4BC7C900F42873 /* CoreMacro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreMacro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABF31AF1B4BC7C900F42873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DABF31B01B4BC7C900F42873 /* CoreMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreMacro.h; sourceTree = "<group>"; };
-		DABF31B61B4BC7C900F42873 /* CoreMacroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMacroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABF31BC1B4BC7C900F42873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DABF31BD1B4BC7C900F42873 /* CoreMacroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreMacroTests.m; sourceTree = "<group>"; };
 		DABF31C71B4BC80800F42873 /* CoreMacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreMacroDefine.h; sourceTree = "<group>"; };
@@ -43,14 +30,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DABF31B31B4BC7C900F42873 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DABF31B71B4BC7C900F42873 /* CoreMacro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				DABF31AB1B4BC7C900F42873 /* CoreMacro.framework */,
-				DABF31B61B4BC7C900F42873 /* CoreMacroTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,24 +133,6 @@
 			productReference = DABF31AB1B4BC7C900F42873 /* CoreMacro.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DABF31B51B4BC7C900F42873 /* CoreMacroTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DABF31C41B4BC7C900F42873 /* Build configuration list for PBXNativeTarget "CoreMacroTests" */;
-			buildPhases = (
-				DABF31B21B4BC7C900F42873 /* Sources */,
-				DABF31B31B4BC7C900F42873 /* Frameworks */,
-				DABF31B41B4BC7C900F42873 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DABF31B91B4BC7C900F42873 /* PBXTargetDependency */,
-			);
-			name = CoreMacroTests;
-			productName = CoreMacroTests;
-			productReference = DABF31B61B4BC7C900F42873 /* CoreMacroTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,9 +143,6 @@
 				ORGANIZATIONNAME = "李彬";
 				TargetAttributes = {
 					DABF31AA1B4BC7C900F42873 = {
-						CreatedOnToolsVersion = 6.4;
-					};
-					DABF31B51B4BC7C900F42873 = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -203,20 +160,12 @@
 			projectRoot = "";
 			targets = (
 				DABF31AA1B4BC7C900F42873 /* CoreMacro */,
-				DABF31B51B4BC7C900F42873 /* CoreMacroTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DABF31A91B4BC7C900F42873 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DABF31B41B4BC7C900F42873 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -234,23 +183,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DABF31B21B4BC7C900F42873 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DABF31BE1B4BC7C900F42873 /* CoreMacroTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DABF31B91B4BC7C900F42873 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DABF31AA1B4BC7C900F42873 /* CoreMacro */;
-			targetProxy = DABF31B81B4BC7C900F42873 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DABF31BF1B4BC7C900F42873 /* Debug */ = {
@@ -291,6 +224,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,6 +266,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -352,6 +287,7 @@
 				INFOPLIST_FILE = CoreMacro/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -368,38 +304,9 @@
 				INFOPLIST_FILE = CoreMacro/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		DABF31C51B4BC7C900F42873 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CoreMacroTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		DABF31C61B4BC7C900F42873 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CoreMacroTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -420,15 +327,6 @@
 			buildConfigurations = (
 				DABF31C21B4BC7C900F42873 /* Debug */,
 				DABF31C31B4BC7C900F42873 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DABF31C41B4BC7C900F42873 /* Build configuration list for PBXNativeTarget "CoreMacroTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DABF31C51B4BC7C900F42873 /* Debug */,
-				DABF31C61B4BC7C900F42873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

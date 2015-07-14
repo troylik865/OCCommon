@@ -16,5 +16,6 @@
 
 + (void)getDataWithUURL:(NSString *)url params:(NSDictionary *)params method:(NSString *)method needCache:(BOOL)needCache block:(void (^)(NSData *, NSError *))block;
 
++ (NSString *)fileExist:(NSString *)url;
 
 @end

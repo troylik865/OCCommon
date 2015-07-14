@@ -9,12 +9,16 @@
 
 #import "CommonMusicHomeController.h"
 #import "CommonMusicChannelView.h"
+#import "CommonMusicContentView.h"
 
 @interface CommonMusicHomeController ()
 
 @property (nonatomic, strong) CommonMusicChannelView *channelScrollView;
 
+@property (nonatomic, strong) CommonMusicContentView *musicContentView;
+
 @property (nonatomic, strong) NSDictionary *data;
+
 
 @end
 
@@ -22,28 +26,46 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = [UIColor whiteColor];
-    CommonMessage *message = [[CommonMessage alloc] initWithHttpUrl:@"http://www.douban.com/j/app/radio/channels" params:nil];
+    CommonMessage *message = [[CommonMessage alloc] initWithHttpUrl:HOME_MUSIC_CHANNELS params:nil];
     [self sendMessage:message];
 }
 
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+
+-(BOOL)isNeedBackButton{
+    return NO;
+}
+
+
 - (void)initUI {
-    self.channelScrollView = [[CommonMusicChannelView alloc] initWithFrame:CGRectMake(0, 0, COMMON_SCREEN_WIDTH, [CommonMusicChannelView viewHeight:_data])];
+    float screenWidth = COMMON_SCREEN_WIDTH;
+    self.channelScrollView = [[CommonMusicChannelView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, [CommonMusicChannelView viewHeight:_data])];
     [self.channelScrollView renderUIWithData:_data];
-    [self.view addSubview:self.channelScrollView];
+    [self.contentView addSubview:self.channelScrollView];
+    
+    float bottom = self.channelScrollView.bottom;
+    self.musicContentView = [[CommonMusicContentView alloc] initWithFrame:CGRectMake(0, bottom, screenWidth, COMMON_SCREEN_HEIGHT - bottom)];
+    [self.musicContentView renderUIWithData:_data];
+    [self.contentView addSubview:self.musicContentView];
 }
 
 
 -(void)messageSuccess:(CommonMessage *)message {
-    NSDictionary *data = [message getDictionaryData];
-    if(!data) {
-        return;
-    } else {
-        _data = data;
+    NSString *messageApi = message.apiName;
+    if([messageApi isEqualToString:HOME_MUSIC_CHANNELS]) {
+        NSDictionary *data = [message getDictionaryData];
+        if(!data) {
+            return;
+        } else {
+            _data = data;
+        }
+        [self initUI];
     }
-    [self initUI];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle {

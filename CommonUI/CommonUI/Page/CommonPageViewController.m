@@ -11,12 +11,39 @@
 
 @interface CommonPageViewController ()
 
+@property (nonatomic, strong) UIButton *backButton;
+
 @end
 
 @implementation CommonPageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initPageViewUI];
+}
+
+-(BOOL)isNeedBackButton {
+    return YES;
+}
+
+-(void)initPageViewUI {
+    _contentView = [[UIView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:_contentView];
+    
+    if([self isNeedBackButton]){
+        _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _backButton.frame = CGRectMake(20, 30, 40, 40);
+        _backButton.layer.cornerRadius = 20;
+        _backButton.imageView.frame = _backButton.bounds;
+        [_backButton setImage:[UIImage imageLoader:@"common_back"] forState:UIControlStateNormal];
+        _backButton.backgroundColor = [UIColor colorWithHexString:@"#FFFFFF" alpha:0.4];
+        [self.view addSubview:_backButton];
+        [_backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    }
+}
+
+-(void)back {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)sendMessage:(CommonMessage *)message {
@@ -95,6 +122,7 @@
 -(void)messageSuccess:(CommonMessage *)message {
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

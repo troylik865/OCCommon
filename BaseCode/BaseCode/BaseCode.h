@@ -24,3 +24,5 @@ FOUNDATION_EXPORT const unsigned char BaseCodeVersionString[];
 #import <BaseCode/UIImageView+Cache.h>
 #import <BaseCode/UIColor+Common.h>
 #import <BaseCode/NSDictionary+Common.h>
+#import <BaseCode/UIView+Common.h>
+#import <BaseCode/UIFont+Common.h>

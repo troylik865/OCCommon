@@ -25,6 +25,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        _buttonArray = [NSMutableArray array];
         //初始化View
         self.backgroundColor = [UIColor colorWithHexString:@"#202325" alpha:0.8];
         self.showsHorizontalScrollIndicator = NO;
@@ -35,6 +36,9 @@
 
 -(void)renderUIWithData:(NSDictionary *)data {
     _channels = [data objectForKey:@"channels"];
+    if(_buttonArray) {
+        [_buttonArray removeAllObjects];
+    }
     if(!_channels){
         if(ARRAY_IS_EMPTY(_buttonArray)){
             return;
@@ -52,7 +56,6 @@
     
     //如果不为空的情况下 进行button的添加和UI的渲染
     else {
-        float x = 10;
         NSInteger count = _channels.count;
         float y = 0;
         if(iOSVersionGreaterThan(@"7.0")) {
@@ -68,21 +71,37 @@
             [button setTitle:buttonName forState:UIControlStateNormal];
             [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
-            CGSize size = [buttonName sizeWithAttributes:@{NSFontAttributeName:button.titleLabel.font}];
-            button.frame = CGRectMake(x, y, size.width, 44);
             [_buttonArray addObject:button];
             [button setTag:(i + 1)];
             [self addSubview:button];
-            x += size.width + 10;
         }
-        self.contentSize = CGSizeMake(x, 44);
     }
+}
+
+-(void)layoutSubviews {
+    [super layoutSubviews];
+    NSInteger count = _buttonArray.count;
+    float x = 10;
+    float y = 0;
+    if(iOSVersionGreaterThan(@"7.0")) {
+        y = 20;
+    }
+    for (int i = 0; i < count; i++) {
+        UIButton *button = (UIButton *)[self viewWithTag:(i + 1)];
+        if(!button) {
+            continue;
+        }
+        CGSize size = [button.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:button.titleLabel.font}];
+        button.frame = CGRectMake(x, y, size.width, 44);
+        x += size.width + 10;
+    }
+    self.contentSize = CGSizeMake(x, 44);
 }
 
 -(void)buttonClick:(UIButton *)button {
     NSInteger index = button.tag - 1;
     NSDictionary *data = [_channels objectAtIndex:index];
-    NSLog(@"seqId:%@",[data objectForKey:@"seq_id"]);
+    [[NSNotificationCenter defaultCenter] postNotificationName:HOME_NOTIFICATION_TRIGGER object:nil userInfo:@{ @"index":[NSNumber numberWithInteger:index]}];
 }
 
 

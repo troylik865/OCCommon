@@ -12,4 +12,6 @@
 
 - (NSString *)md5;
 
+- (NSInteger)indexOf:(NSString *)charact;
+
 @end

@@ -14,6 +14,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <CoreMacro/CoreMacro.h>
 #import <CoreService/CoreService.h>
+#import <AVFoundation/AVFoundation.h>
 
 #import "Home-API.h"
 

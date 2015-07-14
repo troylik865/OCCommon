@@ -25,9 +25,10 @@
         if(connectionError) {
             return;
         }
-        UIImage *image = [UIImage imageWithData:data];
         dispatch_async(dispatch_get_main_queue(), ^{
-           weakSelf.image = image;
+            __strong NSData *strongData = data;
+            UIImage *image = [UIImage imageWithData:strongData];
+            weakSelf.image = image;
         });
     }];
 }

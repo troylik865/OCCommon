@@ -20,3 +20,4 @@ FOUNDATION_EXPORT const unsigned char CommonUIVersionString[];
 #import <CommonUI/CommonPageViewController.h>
 #import <CommonUI/CommonBaseView.h>
 #import <CommonUI/CommonMessage.h>
+#import <CommonUI/UIView+CommonUI.h>

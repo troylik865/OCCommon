@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA0910021B4BB3D400BD3521 /* CommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0910011B4BB3D400BD3521 /* CommonUI.framework */; };
 		DA8B61BC1B1995E1002639D7 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8B61BB1B1995E1002639D7 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA8B61C21B1995E1002639D7 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8B61B61B1995E1002639D7 /* Home.framework */; };
 		DA8B61C91B1995E1002639D7 /* HomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61C81B1995E1002639D7 /* HomeTests.m */; };
 		DABF319E1B4BBD1300F42873 /* BaseCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF319D1B4BBD1300F42873 /* BaseCode.framework */; };
 		DABF31CD1B4BC8B600F42873 /* CoreMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF31CC1B4BC8B600F42873 /* CoreMacro.framework */; };
 		DADAA8AC1B4FA345008073C6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADAA8AB1B4FA345008073C6 /* MediaPlayer.framework */; };
-		DADAA8CE1B5362D6008073C6 /* CommonHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8C51B5362D6008073C6 /* CommonHomeViewController.h */; };
+		DADAA8CE1B5362D6008073C6 /* CommonHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8C51B5362D6008073C6 /* CommonHomeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DADAA8CF1B5362D6008073C6 /* CommonHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8C61B5362D6008073C6 /* CommonHomeViewController.m */; };
 		DADAA8D01B5362D6008073C6 /* CommonMusicHomeController.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8CA1B5362D6008073C6 /* CommonMusicHomeController.h */; };
 		DADAA8D11B5362D6008073C6 /* CommonMusicHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8CB1B5362D6008073C6 /* CommonMusicHomeController.m */; };
 		DADAA8D41B536384008073C6 /* CommonMusicChannelView.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8D21B536384008073C6 /* CommonMusicChannelView.h */; };
 		DADAA8D51B536384008073C6 /* CommonMusicChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8D31B536384008073C6 /* CommonMusicChannelView.m */; };
+		DADAA8E21B538B12008073C6 /* CommonMusicContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8E01B538B12008073C6 /* CommonMusicContentView.h */; };
+		DADAA8E31B538B12008073C6 /* CommonMusicContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8E11B538B12008073C6 /* CommonMusicContentView.m */; };
+		DADAA8EA1B538F82008073C6 /* CommonMusicPlayListTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8E81B538F82008073C6 /* CommonMusicPlayListTableView.h */; };
+		DADAA8EB1B538F82008073C6 /* CommonMusicPlayListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8E91B538F82008073C6 /* CommonMusicPlayListTableView.m */; };
+		DADAA8F31B539934008073C6 /* CommonMusicCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8F11B539934008073C6 /* CommonMusicCell.h */; };
+		DADAA8F41B539934008073C6 /* CommonMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8F21B539934008073C6 /* CommonMusicCell.m */; };
+		DADAA8F71B53A55D008073C6 /* CommonMusicMainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8F51B53A55D008073C6 /* CommonMusicMainViewController.h */; };
+		DADAA8F81B53A55D008073C6 /* CommonMusicMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8F61B53A55D008073C6 /* CommonMusicMainViewController.m */; };
 		DAE189981B4CFAF9009620E2 /* ClickButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE189961B4CFAF9009620E2 /* ClickButton.h */; };
 		DAE189991B4CFAF9009620E2 /* ClickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE189971B4CFAF9009620E2 /* ClickButton.m */; };
+		DAEF2F451B54FEC2007948BF /* CoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F431B54FDB7007948BF /* CoreService.framework */; };
+		DAEF2F471B54FF0D007948BF /* CommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F461B54FF0D007948BF /* CommonUI.framework */; };
+		DAEF2F861B5524B0007948BF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F851B5524B0007948BF /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA0910011B4BB3D400BD3521 /* CommonUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonUI.framework; path = "../CommonUI/build/Debug-iphoneos/CommonUI.framework"; sourceTree = "<group>"; };
-		DA2A67F41B4E662100CA1801 /* CoreService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreService.framework; path = "../CoreService/build/Debug-iphoneos/CoreService.framework"; sourceTree = "<group>"; };
 		DA8B61B61B1995E1002639D7 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B61BA1B1995E1002639D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8B61BB1B1995E1002639D7 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
@@ -47,7 +55,6 @@
 		DABF319D1B4BBD1300F42873 /* BaseCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseCode.framework; path = "../BaseCode/build/Debug-iphoneos/BaseCode.framework"; sourceTree = "<group>"; };
 		DABF31CC1B4BC8B600F42873 /* CoreMacro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMacro.framework; path = "../CoreMacro/build/Debug-iphoneos/CoreMacro.framework"; sourceTree = "<group>"; };
 		DADAA8AB1B4FA345008073C6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		DADAA8AD1B4FA680008073C6 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		DADAA8C51B5362D6008073C6 /* CommonHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHomeViewController.h; sourceTree = "<group>"; };
 		DADAA8C61B5362D6008073C6 /* CommonHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHomeViewController.m; sourceTree = "<group>"; };
 		DADAA8CA1B5362D6008073C6 /* CommonMusicHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMusicHomeController.h; sourceTree = "<group>"; };
@@ -55,8 +62,19 @@
 		DADAA8D21B536384008073C6 /* CommonMusicChannelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMusicChannelView.h; sourceTree = "<group>"; };
 		DADAA8D31B536384008073C6 /* CommonMusicChannelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMusicChannelView.m; sourceTree = "<group>"; };
 		DADAA8DE1B536E91008073C6 /* Home-API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Home-API.h"; sourceTree = "<group>"; };
+		DADAA8E01B538B12008073C6 /* CommonMusicContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMusicContentView.h; sourceTree = "<group>"; };
+		DADAA8E11B538B12008073C6 /* CommonMusicContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMusicContentView.m; sourceTree = "<group>"; };
+		DADAA8E81B538F82008073C6 /* CommonMusicPlayListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMusicPlayListTableView.h; sourceTree = "<group>"; };
+		DADAA8E91B538F82008073C6 /* CommonMusicPlayListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMusicPlayListTableView.m; sourceTree = "<group>"; };
+		DADAA8F11B539934008073C6 /* CommonMusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMusicCell.h; sourceTree = "<group>"; };
+		DADAA8F21B539934008073C6 /* CommonMusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMusicCell.m; sourceTree = "<group>"; };
+		DADAA8F51B53A55D008073C6 /* CommonMusicMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMusicMainViewController.h; sourceTree = "<group>"; };
+		DADAA8F61B53A55D008073C6 /* CommonMusicMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMusicMainViewController.m; sourceTree = "<group>"; };
 		DAE189961B4CFAF9009620E2 /* ClickButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickButton.h; sourceTree = "<group>"; };
 		DAE189971B4CFAF9009620E2 /* ClickButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickButton.m; sourceTree = "<group>"; };
+		DAEF2F431B54FDB7007948BF /* CoreService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreService.framework; path = "../DerivedData/Common/Build/Products/Debug-iphoneos/CoreService.framework"; sourceTree = "<group>"; };
+		DAEF2F461B54FF0D007948BF /* CommonUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonUI.framework; path = "../DerivedData/Common/Build/Products/Debug-iphoneos/CommonUI.framework"; sourceTree = "<group>"; };
+		DAEF2F851B5524B0007948BF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +82,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEF2F861B5524B0007948BF /* AVFoundation.framework in Frameworks */,
+				DAEF2F471B54FF0D007948BF /* CommonUI.framework in Frameworks */,
+				DAEF2F451B54FEC2007948BF /* CoreService.framework in Frameworks */,
 				DADAA8AC1B4FA345008073C6 /* MediaPlayer.framework in Frameworks */,
 				DABF31CD1B4BC8B600F42873 /* CoreMacro.framework in Frameworks */,
 				DABF319E1B4BBD1300F42873 /* BaseCode.framework in Frameworks */,
-				DA0910021B4BB3D400BD3521 /* CommonUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,11 +105,12 @@
 		DA8B61AC1B1995E1002639D7 = {
 			isa = PBXGroup;
 			children = (
+				DAEF2F851B5524B0007948BF /* AVFoundation.framework */,
+				DAEF2F461B54FF0D007948BF /* CommonUI.framework */,
+				DAEF2F431B54FDB7007948BF /* CoreService.framework */,
 				DADAA8AB1B4FA345008073C6 /* MediaPlayer.framework */,
-				DA2A67F41B4E662100CA1801 /* CoreService.framework */,
 				DABF31CC1B4BC8B600F42873 /* CoreMacro.framework */,
 				DABF319D1B4BBD1300F42873 /* BaseCode.framework */,
-				DA0910011B4BB3D400BD3521 /* CommonUI.framework */,
 				DA8B61B81B1995E1002639D7 /* Home */,
 				DA8B61C51B1995E1002639D7 /* HomeTests */,
 				DA8B61B71B1995E1002639D7 /* Products */,
@@ -121,7 +142,6 @@
 		DA8B61B91B1995E1002639D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DADAA8AD1B4FA680008073C6 /* test.mp4 */,
 				DA8B61BA1B1995E1002639D7 /* Info.plist */,
 				DA8B61D41B199618002639D7 /* Home-Prefix.pch */,
 				DADAA8DE1B536E91008073C6 /* Home-API.h */,
@@ -198,6 +218,7 @@
 		DADAA8C71B5362D6008073C6 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				DADAA8DF1B538AED008073C6 /* Common */,
 				DADAA8C81B5362D6008073C6 /* Channel */,
 				DADAA8C91B5362D6008073C6 /* Home */,
 				DADAA8CC1B5362D6008073C6 /* PlayList */,
@@ -227,6 +248,10 @@
 		DADAA8CC1B5362D6008073C6 /* PlayList */ = {
 			isa = PBXGroup;
 			children = (
+				DADAA8E81B538F82008073C6 /* CommonMusicPlayListTableView.h */,
+				DADAA8E91B538F82008073C6 /* CommonMusicPlayListTableView.m */,
+				DADAA8F11B539934008073C6 /* CommonMusicCell.h */,
+				DADAA8F21B539934008073C6 /* CommonMusicCell.m */,
 			);
 			path = PlayList;
 			sourceTree = "<group>";
@@ -234,8 +259,19 @@
 		DADAA8CD1B5362D6008073C6 /* SongMain */ = {
 			isa = PBXGroup;
 			children = (
+				DADAA8F51B53A55D008073C6 /* CommonMusicMainViewController.h */,
+				DADAA8F61B53A55D008073C6 /* CommonMusicMainViewController.m */,
 			);
 			path = SongMain;
+			sourceTree = "<group>";
+		};
+		DADAA8DF1B538AED008073C6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DADAA8E01B538B12008073C6 /* CommonMusicContentView.h */,
+				DADAA8E11B538B12008073C6 /* CommonMusicContentView.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,10 +282,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADAA8D01B5362D6008073C6 /* CommonMusicHomeController.h in Headers */,
+				DADAA8CE1B5362D6008073C6 /* CommonHomeViewController.h in Headers */,
+				DADAA8F31B539934008073C6 /* CommonMusicCell.h in Headers */,
+				DADAA8F71B53A55D008073C6 /* CommonMusicMainViewController.h in Headers */,
 				DA8B61BC1B1995E1002639D7 /* Home.h in Headers */,
+				DADAA8E21B538B12008073C6 /* CommonMusicContentView.h in Headers */,
+				DADAA8EA1B538F82008073C6 /* CommonMusicPlayListTableView.h in Headers */,
 				DAE189981B4CFAF9009620E2 /* ClickButton.h in Headers */,
 				DADAA8D41B536384008073C6 /* CommonMusicChannelView.h in Headers */,
-				DADAA8CE1B5362D6008073C6 /* CommonHomeViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,10 +389,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADAA8F81B53A55D008073C6 /* CommonMusicMainViewController.m in Sources */,
 				DADAA8CF1B5362D6008073C6 /* CommonHomeViewController.m in Sources */,
 				DADAA8D51B536384008073C6 /* CommonMusicChannelView.m in Sources */,
+				DADAA8EB1B538F82008073C6 /* CommonMusicPlayListTableView.m in Sources */,
+				DADAA8F41B539934008073C6 /* CommonMusicCell.m in Sources */,
 				DAE189991B4CFAF9009620E2 /* ClickButton.m in Sources */,
 				DADAA8D11B5362D6008073C6 /* CommonMusicHomeController.m in Sources */,
+				DADAA8E31B538B12008073C6 /* CommonMusicContentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,12 +521,14 @@
 					"/Users/libin/codespace/ios/OCCommon/CommonCode/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/BaseCode/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/CoreMacro/build/Debug-iphoneos",
+					"/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Home/Home-Prefix.pch";
 				INFOPLIST_FILE = Home/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -502,12 +548,14 @@
 					"/Users/libin/codespace/ios/OCCommon/CommonCode/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/BaseCode/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/CoreMacro/build/Debug-iphoneos",
+					"/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Home/Home-Prefix.pch";
 				INFOPLIST_FILE = Home/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DA012A971B4BB9B300446BA7 /* BaseCodeMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1FD69E1B4BAD5A0094B6D5 /* BaseCodeMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA090FFA1B4BAF7D00BD3521 /* BaseCode-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DA090FF91B4BAF7D00BD3521 /* BaseCode-Prefix.pch */; };
+		DA0D2E2A1B54B83D00278A6D /* UIFont+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0D2E281B54B83D00278A6D /* UIFont+Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA0D2E2B1B54B83D00278A6D /* UIFont+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0D2E291B54B83D00278A6D /* UIFont+Common.m */; };
 		DA1FD66E1B4BAC860094B6D5 /* BaseCode.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1FD66D1B4BAC860094B6D5 /* BaseCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA1FD6741B4BAC860094B6D5 /* BaseCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1FD6681B4BAC860094B6D5 /* BaseCode.framework */; };
 		DA1FD67B1B4BAC860094B6D5 /* BaseCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1FD67A1B4BAC860094B6D5 /* BaseCodeTests.m */; };
@@ -26,6 +28,8 @@
 		DADAA8B31B535E79008073C6 /* UIColor+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8B11B535E79008073C6 /* UIColor+Common.m */; };
 		DADAA8DC1B536594008073C6 /* NSDictionary+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8DA1B536594008073C6 /* NSDictionary+Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DADAA8DD1B536594008073C6 /* NSDictionary+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8DB1B536594008073C6 /* NSDictionary+Common.m */; };
+		DADAA8E61B538D7A008073C6 /* UIView+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8E41B538D7A008073C6 /* UIView+Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADAA8E71B538D7A008073C6 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DADAA8E51B538D7A008073C6 /* UIView+Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		DA090FF91B4BAF7D00BD3521 /* BaseCode-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseCode-Prefix.pch"; sourceTree = "<group>"; };
+		DA0D2E281B54B83D00278A6D /* UIFont+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Common.h"; sourceTree = "<group>"; };
+		DA0D2E291B54B83D00278A6D /* UIFont+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Common.m"; sourceTree = "<group>"; };
 		DA1FD6681B4BAC860094B6D5 /* BaseCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1FD66C1B4BAC860094B6D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA1FD66D1B4BAC860094B6D5 /* BaseCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCode.h; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 		DADAA8B11B535E79008073C6 /* UIColor+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Common.m"; sourceTree = "<group>"; };
 		DADAA8DA1B536594008073C6 /* NSDictionary+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Common.h"; sourceTree = "<group>"; };
 		DADAA8DB1B536594008073C6 /* NSDictionary+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Common.m"; sourceTree = "<group>"; };
+		DADAA8E41B538D7A008073C6 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		DADAA8E51B538D7A008073C6 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,10 @@
 				DADAA8B11B535E79008073C6 /* UIColor+Common.m */,
 				DADAA8DA1B536594008073C6 /* NSDictionary+Common.h */,
 				DADAA8DB1B536594008073C6 /* NSDictionary+Common.m */,
+				DADAA8E41B538D7A008073C6 /* UIView+Common.h */,
+				DADAA8E51B538D7A008073C6 /* UIView+Common.m */,
+				DA0D2E281B54B83D00278A6D /* UIFont+Common.h */,
+				DA0D2E291B54B83D00278A6D /* UIFont+Common.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -182,6 +194,8 @@
 				DA1FD69A1B4BAD1E0094B6D5 /* UIImage+Common.h in Headers */,
 				DA012A971B4BB9B300446BA7 /* BaseCodeMacro.h in Headers */,
 				DADAA8DC1B536594008073C6 /* NSDictionary+Common.h in Headers */,
+				DADAA8E61B538D7A008073C6 /* UIView+Common.h in Headers */,
+				DA0D2E2A1B54B83D00278A6D /* UIFont+Common.h in Headers */,
 				DADAA8B21B535E79008073C6 /* UIColor+Common.h in Headers */,
 				DA090FFA1B4BAF7D00BD3521 /* BaseCode-Prefix.pch in Headers */,
 			);
@@ -283,8 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADAA8E71B538D7A008073C6 /* UIView+Common.m in Sources */,
 				DA1FD6971B4BAD1E0094B6D5 /* NSString+Common.m in Sources */,
 				DADAA8DD1B536594008073C6 /* NSDictionary+Common.m in Sources */,
+				DA0D2E2B1B54B83D00278A6D /* UIFont+Common.m in Sources */,
 				DA1FD69D1B4BAD1E0094B6D5 /* UIImageView+Cache.m in Sources */,
 				DA1FD69B1B4BAD1E0094B6D5 /* UIImage+Common.m in Sources */,
 				DA1FD6991B4BAD1E0094B6D5 /* RangeModel.m in Sources */,
@@ -415,6 +431,7 @@
 				INFOPLIST_FILE = BaseCode/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -436,6 +453,7 @@
 				INFOPLIST_FILE = BaseCode/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

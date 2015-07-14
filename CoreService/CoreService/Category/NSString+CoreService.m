@@ -23,4 +23,12 @@
             ];
 }
 
+
+-(NSInteger)indexOf:(NSString *)charact {
+    NSRange range = [self rangeOfString:charact];
+    if(range.location == NSNotFound) {
+        return -1;
+    }
+    return range.location;
+}
 @end
