@@ -19,4 +19,7 @@
    <FileRef
       location = "group:CoreMacro/CoreMacro.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Database/Database.xcodeproj">
+   </FileRef>
 </Workspace>

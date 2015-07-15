@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA6A2CC61B56B9BA00FD75C9 /* Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6A2CC51B56B9BA00FD75C9 /* Database.framework */; };
+		DA6A2CC81B56B9EA00FD75C9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6A2CC71B56B9EA00FD75C9 /* libsqlite3.dylib */; };
 		DA8B61BC1B1995E1002639D7 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8B61BB1B1995E1002639D7 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA8B61C21B1995E1002639D7 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8B61B61B1995E1002639D7 /* Home.framework */; };
 		DA8B61C91B1995E1002639D7 /* HomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61C81B1995E1002639D7 /* HomeTests.m */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA6A2CC51B56B9BA00FD75C9 /* Database.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Database.framework; path = "../Database/build/Debug-iphoneos/Database.framework"; sourceTree = "<group>"; };
+		DA6A2CC71B56B9EA00FD75C9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		DA8B61B61B1995E1002639D7 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B61BA1B1995E1002639D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8B61BB1B1995E1002639D7 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6A2CC81B56B9EA00FD75C9 /* libsqlite3.dylib in Frameworks */,
+				DA6A2CC61B56B9BA00FD75C9 /* Database.framework in Frameworks */,
 				DAEF2F861B5524B0007948BF /* AVFoundation.framework in Frameworks */,
 				DAEF2F471B54FF0D007948BF /* CommonUI.framework in Frameworks */,
 				DAEF2F451B54FEC2007948BF /* CoreService.framework in Frameworks */,
@@ -105,6 +111,8 @@
 		DA8B61AC1B1995E1002639D7 = {
 			isa = PBXGroup;
 			children = (
+				DA6A2CC71B56B9EA00FD75C9 /* libsqlite3.dylib */,
+				DA6A2CC51B56B9BA00FD75C9 /* Database.framework */,
 				DAEF2F851B5524B0007948BF /* AVFoundation.framework */,
 				DAEF2F461B54FF0D007948BF /* CommonUI.framework */,
 				DAEF2F431B54FDB7007948BF /* CoreService.framework */,
@@ -522,6 +530,7 @@
 					"/Users/libin/codespace/ios/OCCommon/BaseCode/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/CoreMacro/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos",
+					"/Users/libin/codespace/ios/OCCommon/Database/build/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Home/Home-Prefix.pch";
@@ -549,6 +558,7 @@
 					"/Users/libin/codespace/ios/OCCommon/BaseCode/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/CoreMacro/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos",
+					"/Users/libin/codespace/ios/OCCommon/Database/build/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Home/Home-Prefix.pch";

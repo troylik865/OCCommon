@@ -145,9 +145,6 @@
     _totalTimeLabel.textColor = [UIColor whiteColor];
     _totalTimeLabel.font = [UIFont getHeitiSCFont:10];
     [self.contentView addSubview:_totalTimeLabel];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didFinish) name:MPMoviePlayerLoadStateDidChangeNotification object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
-//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
 }
 
 
@@ -155,7 +152,6 @@
 -(void)valueChange:(UISlider *)slider {
     float chooseTime = slider.value * _totalTime;
     [_thePlayer setCurrentTime:chooseTime];
-    
 }
 
 
@@ -197,7 +193,6 @@
 
 -(void)setPageParams:(NSDictionary *)pageParams {
     _data = pageParams;
-    
 }
 
 

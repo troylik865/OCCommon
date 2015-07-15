@@ -29,6 +29,10 @@
     self.view.backgroundColor = [UIColor whiteColor];
     CommonMessage *message = [[CommonMessage alloc] initWithHttpUrl:HOME_MUSIC_CHANNELS params:nil];
     [self sendMessage:message];
+    
+    CommonDatabase *database = [[CommonDatabase alloc] init];
+    [database open];
+    [database close];
 }
 
 

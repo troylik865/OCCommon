@@ -7,33 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA09100A1B4BB4D900BD3521 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0910091B4BB4D900BD3521 /* Home.framework */; };
-		DA24589C1B4E60700006EFD5 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA24589B1B4E60700006EFD5 /* 1.png */; };
+		DA0D2E361B54F74900278A6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8B61331B19853D002639D7 /* Images.xcassets */; };
 		DA8B61291B19853D002639D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61281B19853D002639D7 /* main.m */; };
 		DA8B612C1B19853D002639D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B612B1B19853D002639D7 /* AppDelegate.m */; };
 		DA8B61321B19853D002639D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B61301B19853D002639D7 /* Main.storyboard */; };
-		DA8B61341B19853D002639D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8B61331B19853D002639D7 /* Images.xcassets */; };
 		DA8B61371B19853D002639D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA8B61351B19853D002639D7 /* LaunchScreen.xib */; };
-		DA8B61431B19853D002639D7 /* PortalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61421B19853D002639D7 /* PortalTests.m */; };
 		DA8B61E41B199B04002639D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61E31B199B04002639D7 /* ViewController.m */; };
-		DABF31A01B4BBD1900F42873 /* BaseCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF319F1B4BBD1900F42873 /* BaseCode.framework */; };
-		DABF31CB1B4BC8B000F42873 /* CoreMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF31CA1B4BC8B000F42873 /* CoreMacro.framework */; };
-		DADAA8AF1B52988B008073C6 /* page@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DADAA8AE1B52988B008073C6 /* page@2x.png */; };
+		DAEF2F601B54FFAF007948BF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F581B54FFAF007948BF /* 1.png */; };
+		DAEF2F611B54FFAF007948BF /* common_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F591B54FFAF007948BF /* common_back@2x.png */; };
+		DAEF2F621B54FFAF007948BF /* music_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F5A1B54FFAF007948BF /* music_next@2x.png */; };
+		DAEF2F631B54FFAF007948BF /* music_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F5B1B54FFAF007948BF /* music_pause@2x.png */; };
+		DAEF2F641B54FFAF007948BF /* music_play_progress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F5C1B54FFAF007948BF /* music_play_progress@2x.png */; };
+		DAEF2F651B54FFAF007948BF /* music_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F5D1B54FFAF007948BF /* music_play@2x.png */; };
+		DAEF2F661B54FFAF007948BF /* music_pre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F5E1B54FFAF007948BF /* music_pre@2x.png */; };
+		DAEF2F671B54FFAF007948BF /* page@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F5F1B54FFAF007948BF /* page@2x.png */; };
+		DAEF2F781B550563007948BF /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F771B550563007948BF /* Home.framework */; };
+		DAEF2F791B550563007948BF /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F771B550563007948BF /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAEF2F7B1B551186007948BF /* CommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F7A1B551186007948BF /* CommonUI.framework */; };
+		DAEF2F7C1B551186007948BF /* CommonUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F7A1B551186007948BF /* CommonUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAEF2F7E1B55119D007948BF /* CoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F7D1B55119D007948BF /* CoreService.framework */; };
+		DAEF2F7F1B55119D007948BF /* CoreService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F7D1B55119D007948BF /* CoreService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAEF2F811B5511A8007948BF /* BaseCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F801B5511A8007948BF /* BaseCode.framework */; };
+		DAEF2F821B5511A8007948BF /* BaseCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F801B5511A8007948BF /* BaseCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAEF2F841B5512E7007948BF /* bigbang-sober.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F831B5512E7007948BF /* bigbang-sober.mp3 */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		DA8B613D1B19853D002639D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA8B611B1B19853D002639D7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA8B61221B19853D002639D7;
-			remoteInfo = Portal;
+/* Begin PBXCopyFilesBuildPhase section */
+		DAEF2F401B54FC5D007948BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DAEF2F821B5511A8007948BF /* BaseCode.framework in Embed Frameworks */,
+				DAEF2F791B550563007948BF /* Home.framework in Embed Frameworks */,
+				DAEF2F7F1B55119D007948BF /* CoreService.framework in Embed Frameworks */,
+				DAEF2F7C1B551186007948BF /* CommonUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DA0910091B4BB4D900BD3521 /* Home.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Home.framework; path = "../Home/build/Debug-iphoneos/Home.framework"; sourceTree = "<group>"; };
-		DA24589B1B4E60700006EFD5 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		DA8B61231B19853D002639D7 /* Portal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B61271B19853D002639D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8B61281B19853D002639D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,17 +58,25 @@
 		DA8B61311B19853D002639D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA8B61331B19853D002639D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA8B61361B19853D002639D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		DA8B613C1B19853D002639D7 /* PortalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B61411B19853D002639D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8B61421B19853D002639D7 /* PortalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortalTests.m; sourceTree = "<group>"; };
 		DA8B61781B1985A9002639D7 /* Portal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Portal-Prefix.pch"; sourceTree = "<group>"; };
 		DA8B61AB1B19942E002639D7 /* PortalMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortalMacro.h; sourceTree = "<group>"; };
-		DA8B61D21B1995F5002639D7 /* Home.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Home.framework; path = "../../Home/build/Debug-iphoneos/Home.framework"; sourceTree = "<group>"; };
 		DA8B61E21B199B04002639D7 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DA8B61E31B199B04002639D7 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DABF319F1B4BBD1900F42873 /* BaseCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaseCode.framework; path = "../BaseCode/build/Debug-iphoneos/BaseCode.framework"; sourceTree = "<group>"; };
-		DABF31CA1B4BC8B000F42873 /* CoreMacro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMacro.framework; path = "../CoreMacro/build/Debug-iphoneos/CoreMacro.framework"; sourceTree = "<group>"; };
-		DADAA8AE1B52988B008073C6 /* page@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page@2x.png"; sourceTree = "<group>"; };
+		DAEF2F581B54FFAF007948BF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		DAEF2F591B54FFAF007948BF /* common_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common_back@2x.png"; sourceTree = "<group>"; };
+		DAEF2F5A1B54FFAF007948BF /* music_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music_next@2x.png"; sourceTree = "<group>"; };
+		DAEF2F5B1B54FFAF007948BF /* music_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music_pause@2x.png"; sourceTree = "<group>"; };
+		DAEF2F5C1B54FFAF007948BF /* music_play_progress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music_play_progress@2x.png"; sourceTree = "<group>"; };
+		DAEF2F5D1B54FFAF007948BF /* music_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music_play@2x.png"; sourceTree = "<group>"; };
+		DAEF2F5E1B54FFAF007948BF /* music_pre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music_pre@2x.png"; sourceTree = "<group>"; };
+		DAEF2F5F1B54FFAF007948BF /* page@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page@2x.png"; sourceTree = "<group>"; };
+		DAEF2F771B550563007948BF /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Home.framework; path = "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos/Home.framework"; sourceTree = "<absolute>"; };
+		DAEF2F7A1B551186007948BF /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CommonUI.framework; path = "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos/CommonUI.framework"; sourceTree = "<absolute>"; };
+		DAEF2F7D1B55119D007948BF /* CoreService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CoreService.framework; path = "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos/CoreService.framework"; sourceTree = "<absolute>"; };
+		DAEF2F801B5511A8007948BF /* BaseCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = BaseCode.framework; path = "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos/BaseCode.framework"; sourceTree = "<absolute>"; };
+		DAEF2F831B5512E7007948BF /* bigbang-sober.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bigbang-sober.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,16 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABF31CB1B4BC8B000F42873 /* CoreMacro.framework in Frameworks */,
-				DABF31A01B4BBD1900F42873 /* BaseCode.framework in Frameworks */,
-				DA09100A1B4BB4D900BD3521 /* Home.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA8B61391B19853D002639D7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DAEF2F811B5511A8007948BF /* BaseCode.framework in Frameworks */,
+				DAEF2F781B550563007948BF /* Home.framework in Frameworks */,
+				DAEF2F7E1B55119D007948BF /* CoreService.framework in Frameworks */,
+				DAEF2F7B1B551186007948BF /* CommonUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +97,10 @@
 		DA8B611A1B19853D002639D7 = {
 			isa = PBXGroup;
 			children = (
-				DABF31CA1B4BC8B000F42873 /* CoreMacro.framework */,
-				DABF319F1B4BBD1900F42873 /* BaseCode.framework */,
-				DA0910091B4BB4D900BD3521 /* Home.framework */,
+				DAEF2F801B5511A8007948BF /* BaseCode.framework */,
+				DAEF2F7D1B55119D007948BF /* CoreService.framework */,
+				DAEF2F7A1B551186007948BF /* CommonUI.framework */,
+				DAEF2F771B550563007948BF /* Home.framework */,
 				DA8B61251B19853D002639D7 /* Portal */,
 				DA8B613F1B19853D002639D7 /* PortalTests */,
 				DA8B61241B19853D002639D7 /* Products */,
@@ -92,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				DA8B61231B19853D002639D7 /* Portal.app */,
-				DA8B613C1B19853D002639D7 /* PortalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,13 +133,19 @@
 		DA8B61261B19853D002639D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DADAA8AE1B52988B008073C6 /* page@2x.png */,
-				DA24589B1B4E60700006EFD5 /* 1.png */,
+				DAEF2F831B5512E7007948BF /* bigbang-sober.mp3 */,
+				DAEF2F581B54FFAF007948BF /* 1.png */,
+				DAEF2F591B54FFAF007948BF /* common_back@2x.png */,
+				DAEF2F5A1B54FFAF007948BF /* music_next@2x.png */,
+				DAEF2F5B1B54FFAF007948BF /* music_pause@2x.png */,
+				DAEF2F5C1B54FFAF007948BF /* music_play_progress@2x.png */,
+				DAEF2F5D1B54FFAF007948BF /* music_play@2x.png */,
+				DAEF2F5E1B54FFAF007948BF /* music_pre@2x.png */,
+				DAEF2F5F1B54FFAF007948BF /* page@2x.png */,
 				DA8B61271B19853D002639D7 /* Info.plist */,
 				DA8B61281B19853D002639D7 /* main.m */,
 				DA8B61AB1B19942E002639D7 /* PortalMacro.h */,
 				DA8B61781B1985A9002639D7 /* Portal-Prefix.pch */,
-				DA8B61D21B1995F5002639D7 /* Home.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -153,6 +177,7 @@
 				DA8B611F1B19853D002639D7 /* Sources */,
 				DA8B61201B19853D002639D7 /* Frameworks */,
 				DA8B61211B19853D002639D7 /* Resources */,
+				DAEF2F401B54FC5D007948BF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,24 +187,6 @@
 			productName = Portal;
 			productReference = DA8B61231B19853D002639D7 /* Portal.app */;
 			productType = "com.apple.product-type.application";
-		};
-		DA8B613B1B19853D002639D7 /* PortalTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA8B61491B19853D002639D7 /* Build configuration list for PBXNativeTarget "PortalTests" */;
-			buildPhases = (
-				DA8B61381B19853D002639D7 /* Sources */,
-				DA8B61391B19853D002639D7 /* Frameworks */,
-				DA8B613A1B19853D002639D7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA8B613E1B19853D002639D7 /* PBXTargetDependency */,
-			);
-			name = PortalTests;
-			productName = PortalTests;
-			productReference = DA8B613C1B19853D002639D7 /* PortalTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -192,10 +199,7 @@
 				TargetAttributes = {
 					DA8B61221B19853D002639D7 = {
 						CreatedOnToolsVersion = 6.3.2;
-					};
-					DA8B613B1B19853D002639D7 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = DA8B61221B19853D002639D7;
+						DevelopmentTeam = TJS5PLKC62;
 					};
 				};
 			};
@@ -213,7 +217,6 @@
 			projectRoot = "";
 			targets = (
 				DA8B61221B19853D002639D7 /* Portal */,
-				DA8B613B1B19853D002639D7 /* PortalTests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,18 +226,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEF2F671B54FFAF007948BF /* page@2x.png in Resources */,
 				DA8B61321B19853D002639D7 /* Main.storyboard in Resources */,
-				DA24589C1B4E60700006EFD5 /* 1.png in Resources */,
-				DADAA8AF1B52988B008073C6 /* page@2x.png in Resources */,
+				DAEF2F641B54FFAF007948BF /* music_play_progress@2x.png in Resources */,
+				DAEF2F661B54FFAF007948BF /* music_pre@2x.png in Resources */,
+				DAEF2F631B54FFAF007948BF /* music_pause@2x.png in Resources */,
+				DAEF2F601B54FFAF007948BF /* 1.png in Resources */,
+				DA0D2E361B54F74900278A6D /* Images.xcassets in Resources */,
+				DAEF2F621B54FFAF007948BF /* music_next@2x.png in Resources */,
 				DA8B61371B19853D002639D7 /* LaunchScreen.xib in Resources */,
-				DA8B61341B19853D002639D7 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA8B613A1B19853D002639D7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DAEF2F841B5512E7007948BF /* bigbang-sober.mp3 in Resources */,
+				DAEF2F651B54FFAF007948BF /* music_play@2x.png in Resources */,
+				DAEF2F611B54FFAF007948BF /* common_back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,23 +254,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA8B61381B19853D002639D7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA8B61431B19853D002639D7 /* PortalTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DA8B613E1B19853D002639D7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA8B61221B19853D002639D7 /* Portal */;
-			targetProxy = DA8B613D1B19853D002639D7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA8B61301B19853D002639D7 /* Main.storyboard */ = {
@@ -375,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/libin/codespace/ios/OCCommon/CommonUI/build/Debug-iphoneos",
@@ -383,12 +371,16 @@
 					"/Users/libin/codespace/ios/OCCommon/CommonCode/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/BaseCode/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/CoreMacro/build/Debug-iphoneos",
+					"/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos",
+					"/Users/libin/codespace/ios/OCCommon/Database/build/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Portal/Portal-Prefix.pch";
 				INFOPLIST_FILE = Portal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -397,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/libin/codespace/ios/OCCommon/CommonUI/build/Debug-iphoneos",
@@ -405,47 +398,17 @@
 					"/Users/libin/codespace/ios/OCCommon/CommonCode/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/BaseCode/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/CoreMacro/build/Debug-iphoneos",
+					"/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos",
+					"/Users/libin/codespace/ios/OCCommon/Database/build/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Portal/Portal-Prefix.pch";
 				INFOPLIST_FILE = Portal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		DA8B614A1B19853D002639D7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PortalTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Portal.app/Portal";
-			};
-			name = Debug;
-		};
-		DA8B614B1B19853D002639D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PortalTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Portal.app/Portal";
 			};
 			name = Release;
 		};
@@ -466,15 +429,6 @@
 			buildConfigurations = (
 				DA8B61471B19853D002639D7 /* Debug */,
 				DA8B61481B19853D002639D7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA8B61491B19853D002639D7 /* Build configuration list for PBXNativeTarget "PortalTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA8B614A1B19853D002639D7 /* Debug */,
-				DA8B614B1B19853D002639D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

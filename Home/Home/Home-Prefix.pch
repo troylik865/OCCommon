@@ -15,6 +15,7 @@
 #import <CoreMacro/CoreMacro.h>
 #import <CoreService/CoreService.h>
 #import <AVFoundation/AVFoundation.h>
+#import <Database/CommonDatabase.h>
 
 #import "Home-API.h"
 
