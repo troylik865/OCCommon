@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		DA0D2E361B54F74900278A6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8B61331B19853D002639D7 /* Images.xcassets */; };
+		DA4AF2B91B577FAD0067DB1D /* CommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2B81B577FAD0067DB1D /* CommonUI.framework */; };
+		DA4AF2BA1B577FAD0067DB1D /* CommonUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2B81B577FAD0067DB1D /* CommonUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA4AF2BC1B577FB20067DB1D /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2BB1B577FB20067DB1D /* Home.framework */; };
+		DA4AF2BD1B577FB20067DB1D /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2BB1B577FB20067DB1D /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA4AF2C21B577FBB0067DB1D /* BaseCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2C11B577FBB0067DB1D /* BaseCode.framework */; };
+		DA4AF2C31B577FBB0067DB1D /* BaseCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2C11B577FBB0067DB1D /* BaseCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA4AF2C51B577FC60067DB1D /* CoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2C41B577FC60067DB1D /* CoreService.framework */; };
+		DA4AF2C61B577FC60067DB1D /* CoreService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2C41B577FC60067DB1D /* CoreService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA4AF2C81B577FCD0067DB1D /* CoreMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2C71B577FCD0067DB1D /* CoreMacro.framework */; };
+		DA4AF2C91B577FCD0067DB1D /* CoreMacro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2C71B577FCD0067DB1D /* CoreMacro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA4AF2CF1B5784E00067DB1D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2CE1B5784E00067DB1D /* libsqlite3.dylib */; };
+		DA4AF2D11B5784E30067DB1D /* Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2D01B5784E30067DB1D /* Database.framework */; };
+		DA4AF2D21B5784E30067DB1D /* Database.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2D01B5784E30067DB1D /* Database.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA8B61291B19853D002639D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B61281B19853D002639D7 /* main.m */; };
 		DA8B612C1B19853D002639D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B612B1B19853D002639D7 /* AppDelegate.m */; };
 		DA8B61321B19853D002639D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B61301B19853D002639D7 /* Main.storyboard */; };
@@ -21,14 +34,6 @@
 		DAEF2F651B54FFAF007948BF /* music_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F5D1B54FFAF007948BF /* music_play@2x.png */; };
 		DAEF2F661B54FFAF007948BF /* music_pre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F5E1B54FFAF007948BF /* music_pre@2x.png */; };
 		DAEF2F671B54FFAF007948BF /* page@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F5F1B54FFAF007948BF /* page@2x.png */; };
-		DAEF2F781B550563007948BF /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F771B550563007948BF /* Home.framework */; };
-		DAEF2F791B550563007948BF /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F771B550563007948BF /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DAEF2F7B1B551186007948BF /* CommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F7A1B551186007948BF /* CommonUI.framework */; };
-		DAEF2F7C1B551186007948BF /* CommonUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F7A1B551186007948BF /* CommonUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DAEF2F7E1B55119D007948BF /* CoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F7D1B55119D007948BF /* CoreService.framework */; };
-		DAEF2F7F1B55119D007948BF /* CoreService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F7D1B55119D007948BF /* CoreService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DAEF2F811B5511A8007948BF /* BaseCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F801B5511A8007948BF /* BaseCode.framework */; };
-		DAEF2F821B5511A8007948BF /* BaseCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF2F801B5511A8007948BF /* BaseCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAEF2F841B5512E7007948BF /* bigbang-sober.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DAEF2F831B5512E7007948BF /* bigbang-sober.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -39,10 +44,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DAEF2F821B5511A8007948BF /* BaseCode.framework in Embed Frameworks */,
-				DAEF2F791B550563007948BF /* Home.framework in Embed Frameworks */,
-				DAEF2F7F1B55119D007948BF /* CoreService.framework in Embed Frameworks */,
-				DAEF2F7C1B551186007948BF /* CommonUI.framework in Embed Frameworks */,
+				DA4AF2C31B577FBB0067DB1D /* BaseCode.framework in Embed Frameworks */,
+				DA4AF2C91B577FCD0067DB1D /* CoreMacro.framework in Embed Frameworks */,
+				DA4AF2BA1B577FAD0067DB1D /* CommonUI.framework in Embed Frameworks */,
+				DA4AF2D21B5784E30067DB1D /* Database.framework in Embed Frameworks */,
+				DA4AF2BD1B577FB20067DB1D /* Home.framework in Embed Frameworks */,
+				DA4AF2C61B577FC60067DB1D /* CoreService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +57,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA4AF2B81B577FAD0067DB1D /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CommonUI.framework; path = "/Users/libin/Library/Developer/Xcode/DerivedData/Common-dfbbnvqkrdqhksaxtfzbueigrbkx/Build/Products/Debug-iphoneos/CommonUI.framework"; sourceTree = "<absolute>"; };
+		DA4AF2BB1B577FB20067DB1D /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Home.framework; path = "/Users/libin/Library/Developer/Xcode/DerivedData/Common-dfbbnvqkrdqhksaxtfzbueigrbkx/Build/Products/Debug-iphoneos/Home.framework"; sourceTree = "<absolute>"; };
+		DA4AF2C11B577FBB0067DB1D /* BaseCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = BaseCode.framework; path = "/Users/libin/Library/Developer/Xcode/DerivedData/Common-dfbbnvqkrdqhksaxtfzbueigrbkx/Build/Products/Debug-iphoneos/BaseCode.framework"; sourceTree = "<absolute>"; };
+		DA4AF2C41B577FC60067DB1D /* CoreService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CoreService.framework; path = "/Users/libin/Library/Developer/Xcode/DerivedData/Common-dfbbnvqkrdqhksaxtfzbueigrbkx/Build/Products/Debug-iphoneos/CoreService.framework"; sourceTree = "<absolute>"; };
+		DA4AF2C71B577FCD0067DB1D /* CoreMacro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CoreMacro.framework; path = "/Users/libin/Library/Developer/Xcode/DerivedData/Common-dfbbnvqkrdqhksaxtfzbueigrbkx/Build/Products/Debug-iphoneos/CoreMacro.framework"; sourceTree = "<absolute>"; };
+		DA4AF2CE1B5784E00067DB1D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DA4AF2D01B5784E30067DB1D /* Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Database.framework; path = "/Users/libin/Library/Developer/Xcode/DerivedData/Common-dfbbnvqkrdqhksaxtfzbueigrbkx/Build/Products/Debug-iphoneos/Database.framework"; sourceTree = "<absolute>"; };
 		DA8B61231B19853D002639D7 /* Portal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B61271B19853D002639D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8B61281B19853D002639D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,10 +86,6 @@
 		DAEF2F5D1B54FFAF007948BF /* music_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music_play@2x.png"; sourceTree = "<group>"; };
 		DAEF2F5E1B54FFAF007948BF /* music_pre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music_pre@2x.png"; sourceTree = "<group>"; };
 		DAEF2F5F1B54FFAF007948BF /* page@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page@2x.png"; sourceTree = "<group>"; };
-		DAEF2F771B550563007948BF /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Home.framework; path = "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos/Home.framework"; sourceTree = "<absolute>"; };
-		DAEF2F7A1B551186007948BF /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CommonUI.framework; path = "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos/CommonUI.framework"; sourceTree = "<absolute>"; };
-		DAEF2F7D1B55119D007948BF /* CoreService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CoreService.framework; path = "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos/CoreService.framework"; sourceTree = "<absolute>"; };
-		DAEF2F801B5511A8007948BF /* BaseCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = BaseCode.framework; path = "/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos/BaseCode.framework"; sourceTree = "<absolute>"; };
 		DAEF2F831B5512E7007948BF /* bigbang-sober.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bigbang-sober.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,10 +94,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAEF2F811B5511A8007948BF /* BaseCode.framework in Frameworks */,
-				DAEF2F781B550563007948BF /* Home.framework in Frameworks */,
-				DAEF2F7E1B55119D007948BF /* CoreService.framework in Frameworks */,
-				DAEF2F7B1B551186007948BF /* CommonUI.framework in Frameworks */,
+				DA4AF2CF1B5784E00067DB1D /* libsqlite3.dylib in Frameworks */,
+				DA4AF2D11B5784E30067DB1D /* Database.framework in Frameworks */,
+				DA4AF2C21B577FBB0067DB1D /* BaseCode.framework in Frameworks */,
+				DA4AF2C81B577FCD0067DB1D /* CoreMacro.framework in Frameworks */,
+				DA4AF2B91B577FAD0067DB1D /* CommonUI.framework in Frameworks */,
+				DA4AF2BC1B577FB20067DB1D /* Home.framework in Frameworks */,
+				DA4AF2C51B577FC60067DB1D /* CoreService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,10 +110,13 @@
 		DA8B611A1B19853D002639D7 = {
 			isa = PBXGroup;
 			children = (
-				DAEF2F801B5511A8007948BF /* BaseCode.framework */,
-				DAEF2F7D1B55119D007948BF /* CoreService.framework */,
-				DAEF2F7A1B551186007948BF /* CommonUI.framework */,
-				DAEF2F771B550563007948BF /* Home.framework */,
+				DA4AF2D01B5784E30067DB1D /* Database.framework */,
+				DA4AF2CE1B5784E00067DB1D /* libsqlite3.dylib */,
+				DA4AF2C71B577FCD0067DB1D /* CoreMacro.framework */,
+				DA4AF2C41B577FC60067DB1D /* CoreService.framework */,
+				DA4AF2C11B577FBB0067DB1D /* BaseCode.framework */,
+				DA4AF2BB1B577FB20067DB1D /* Home.framework */,
+				DA4AF2B81B577FAD0067DB1D /* CommonUI.framework */,
 				DA8B61251B19853D002639D7 /* Portal */,
 				DA8B613F1B19853D002639D7 /* PortalTests */,
 				DA8B61241B19853D002639D7 /* Products */,
@@ -373,6 +389,7 @@
 					"/Users/libin/codespace/ios/OCCommon/CoreMacro/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/Database/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Common-dfbbnvqkrdqhksaxtfzbueigrbkx/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Portal/Portal-Prefix.pch";
@@ -381,6 +398,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -400,6 +418,7 @@
 					"/Users/libin/codespace/ios/OCCommon/CoreMacro/build/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/DerivedData/Common/Build/Products/Debug-iphoneos",
 					"/Users/libin/codespace/ios/OCCommon/Database/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Common-dfbbnvqkrdqhksaxtfzbueigrbkx/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Portal/Portal-Prefix.pch";
@@ -408,6 +427,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

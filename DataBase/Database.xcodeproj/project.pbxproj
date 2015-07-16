@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA4AF2D41B578D0F0067DB1D /* CoreMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AF2D31B578D0F0067DB1D /* CoreMacro.framework */; };
 		DA54890E1B565D290016BD1B /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = DA54890D1B565D290016BD1B /* Database.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA5489141B565D290016BD1B /* Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5489081B565D290016BD1B /* Database.framework */; };
 		DA54891B1B565D290016BD1B /* DatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA54891A1B565D290016BD1B /* DatabaseTests.m */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA4AF2D31B578D0F0067DB1D /* CoreMacro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMacro.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Common-dfbbnvqkrdqhksaxtfzbueigrbkx/Build/Products/Debug-iphoneos/CoreMacro.framework"; sourceTree = "<group>"; };
 		DA5489081B565D290016BD1B /* Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA54890C1B565D290016BD1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA54890D1B565D290016BD1B /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4AF2D41B578D0F0067DB1D /* CoreMacro.framework in Frameworks */,
 				DA6A2CC11B56B75600FD75C9 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +64,7 @@
 		DA5488FE1B565D290016BD1B = {
 			isa = PBXGroup;
 			children = (
+				DA4AF2D31B578D0F0067DB1D /* CoreMacro.framework */,
 				DA6A2CC01B56B75600FD75C9 /* libsqlite3.dylib */,
 				DA54890A1B565D290016BD1B /* Database */,
 				DA5489171B565D290016BD1B /* DatabaseTests */,
@@ -348,6 +352,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Common-dfbbnvqkrdqhksaxtfzbueigrbkx/Build/Products/Debug-iphoneos",
+				);
 				GCC_PREFIX_HEADER = "Database/Database-Prefix.pch";
 				INFOPLIST_FILE = Database/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -360,6 +368,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
@@ -371,6 +380,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Common-dfbbnvqkrdqhksaxtfzbueigrbkx/Build/Products/Debug-iphoneos",
+				);
 				GCC_PREFIX_HEADER = "Database/Database-Prefix.pch";
 				INFOPLIST_FILE = Database/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -383,6 +396,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;

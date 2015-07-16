@@ -12,6 +12,7 @@
 #import "NSString+Common.h"
 #import "UIImage+Common.h"
 #import "UIImageView+Cache.h"
+#import "NSObject+Common.h"
 #import "RangeModel.h"
 
 #endif

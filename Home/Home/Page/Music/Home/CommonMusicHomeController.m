@@ -31,6 +31,8 @@
     [self sendMessage:message];
     
     CommonDatabase *database = [[CommonDatabase alloc] init];
+    [database propertyKeys];
+    [database setAttribute:@{@"name":@"zhangsan",@"isFileOpen":@1}];
     [database open];
     [database close];
 }

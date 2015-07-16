@@ -11,6 +11,13 @@
 @interface CommonDatabase : NSObject
 
 /**
+ *  文件是否打开
+ */
+@property (nonatomic, assign) BOOL isFileOpen;
+
+@property (nonatomic, strong) NSString *name;
+
+/**
  *  获取数据库操作对象
  *
  *  @returns 操作对象

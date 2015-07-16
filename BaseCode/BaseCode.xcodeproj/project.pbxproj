@@ -22,6 +22,8 @@
 		DA1FD69B1B4BAD1E0094B6D5 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1FD6931B4BAD1E0094B6D5 /* UIImage+Common.m */; };
 		DA1FD69C1B4BAD1E0094B6D5 /* UIImageView+Cache.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1FD6941B4BAD1E0094B6D5 /* UIImageView+Cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA1FD69D1B4BAD1E0094B6D5 /* UIImageView+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1FD6951B4BAD1E0094B6D5 /* UIImageView+Cache.m */; };
+		DA4AF2D71B57909B0067DB1D /* NSObject+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4AF2D51B57909B0067DB1D /* NSObject+Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA4AF2D81B57909B0067DB1D /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4AF2D61B57909B0067DB1D /* NSObject+Common.m */; };
 		DABF31971B4BBAAA00F42873 /* CoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF31961B4BBAAA00F42873 /* CoreService.framework */; };
 		DABF31CF1B4BC8BD00F42873 /* CoreMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF31CE1B4BC8BD00F42873 /* CoreMacro.framework */; };
 		DADAA8B21B535E79008073C6 /* UIColor+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = DADAA8B01B535E79008073C6 /* UIColor+Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,6 +63,8 @@
 		DA1FD6941B4BAD1E0094B6D5 /* UIImageView+Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Cache.h"; sourceTree = "<group>"; };
 		DA1FD6951B4BAD1E0094B6D5 /* UIImageView+Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Cache.m"; sourceTree = "<group>"; };
 		DA1FD69E1B4BAD5A0094B6D5 /* BaseCodeMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCodeMacro.h; sourceTree = "<group>"; };
+		DA4AF2D51B57909B0067DB1D /* NSObject+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Common.h"; sourceTree = "<group>"; };
+		DA4AF2D61B57909B0067DB1D /* NSObject+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Common.m"; sourceTree = "<group>"; };
 		DABF31961B4BBAAA00F42873 /* CoreService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreService.framework; path = "../CoreService/build/Debug-iphoneos/CoreService.framework"; sourceTree = "<group>"; };
 		DABF31CE1B4BC8BD00F42873 /* CoreMacro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMacro.framework; path = "../CoreMacro/build/Debug-iphoneos/CoreMacro.framework"; sourceTree = "<group>"; };
 		DADAA8B01B535E79008073C6 /* UIColor+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Common.h"; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 				DADAA8E51B538D7A008073C6 /* UIView+Common.m */,
 				DA0D2E281B54B83D00278A6D /* UIFont+Common.h */,
 				DA0D2E291B54B83D00278A6D /* UIFont+Common.m */,
+				DA4AF2D51B57909B0067DB1D /* NSObject+Common.h */,
+				DA4AF2D61B57909B0067DB1D /* NSObject+Common.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 				DADAA8DC1B536594008073C6 /* NSDictionary+Common.h in Headers */,
 				DADAA8E61B538D7A008073C6 /* UIView+Common.h in Headers */,
 				DA0D2E2A1B54B83D00278A6D /* UIFont+Common.h in Headers */,
+				DA4AF2D71B57909B0067DB1D /* NSObject+Common.h in Headers */,
 				DADAA8B21B535E79008073C6 /* UIColor+Common.h in Headers */,
 				DA090FFA1B4BAF7D00BD3521 /* BaseCode-Prefix.pch in Headers */,
 			);
@@ -298,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADAA8E71B538D7A008073C6 /* UIView+Common.m in Sources */,
+				DA4AF2D81B57909B0067DB1D /* NSObject+Common.m in Sources */,
 				DA1FD6971B4BAD1E0094B6D5 /* NSString+Common.m in Sources */,
 				DADAA8DD1B536594008073C6 /* NSDictionary+Common.m in Sources */,
 				DA0D2E2B1B54B83D00278A6D /* UIFont+Common.m in Sources */,

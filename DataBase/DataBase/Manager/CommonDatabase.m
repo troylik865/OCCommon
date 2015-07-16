@@ -39,7 +39,7 @@
 #pragma mark 关闭数据库
 -(BOOL) close {
     sqlite3_close(sqlite);
-    sqlite = nil;
+    SafeRelease(sqlite);
     return YES;
 }
 
