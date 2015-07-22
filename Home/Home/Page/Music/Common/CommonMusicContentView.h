@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CommonMusicContentView : UIScrollView
+@interface CommonMusicContentView : UIScrollView <UIScrollViewDelegate>
 
 -(void)renderUIWithData:(NSDictionary *)data;
 

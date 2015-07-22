@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong) NSMutableArray *playList;
 
+@property (nonatomic, assign) BOOL hasLoadData;
+
 @end
 
 @implementation CommonMusicPlayListTableView
@@ -26,6 +28,7 @@
         self.dataSource = self;
         self.delegate = self;
         _playList = [NSMutableArray array];
+        self.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return self;
 }
@@ -42,6 +45,8 @@
     }
     if(!ARRAY_IS_EMPTY(_playList)) {
         [cell renderUIWithData:[_playList objectAtIndex:indexPath.row]];
+    } else {
+        [cell renderUIWithData:nil];
     }
     return cell;
 }
@@ -62,11 +67,22 @@
     [self gotoPage:@"CommonMusicMainViewController" params:data];
 }
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1);
+    __weak typeof(UITableViewCell) *weakCell = cell;
+    [UIView animateWithDuration:0.25 animations:^{
+        weakCell.layer.transform = CATransform3DMakeScale(1, 1, 1);
+    }];
+}
+
 
 #pragma -mark
 #pragma -mark 加载数据
 #pragma -mark
 -(void)loadMusicData {
+    if (_hasLoadData) {
+        return;
+    }
     CommonMessage *message = [[CommonMessage alloc] initWithHttpUrl:[NSString stringWithFormat:@"%@%@",HOME_MUSIC_PLAYLIST,DEFAULT_BLANK_IN_DICTIONARY(_channel, @"seq_id")] params:nil];
     [self sendMessage:message];
 }
@@ -75,6 +91,7 @@
 -(void)messageSuccess:(CommonMessage *)message {
     NSDictionary *data = [message getDictionaryData];
     _playList = [data objectForKey:@"song"];
+    _hasLoadData = YES;
     [self reloadData];
 }
 
@@ -83,7 +100,8 @@
 }
 
 -(void)refreshData {
-    
+    CommonMessage *message = [[CommonMessage alloc] initWithHttpUrl:[NSString stringWithFormat:@"%@%@",HOME_MUSIC_PLAYLIST,DEFAULT_BLANK_IN_DICTIONARY(_channel, @"seq_id")] params:nil];
+    [self sendMessage:message];
 }
 
 - (void)renderUIWithData:(NSDictionary *)channel {

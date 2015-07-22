@@ -30,17 +30,20 @@
     CommonMessage *message = [[CommonMessage alloc] initWithHttpUrl:HOME_MUSIC_CHANNELS params:nil];
     [self sendMessage:message];
     
-    CommonDatabase *database = [[CommonDatabase alloc] init];
-    [database propertyKeys];
-    [database setAttribute:@{@"name":@"zhangsan",@"isFileOpen":@1}];
-    [database open];
-    [database close];
+//    CommonDatabase *database = [[CommonDatabase alloc] init];
+//    [database propertyKeys];
+//    [database setAttribute:@{@"name":@"zhangsan",@"isFileOpen":@1}];
+//    [database open];
+//    [database close];
 }
 
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
+    
+    //都不知道是为什么
+    self.channelScrollView.contentOffset = CGPointMake(self.channelScrollView.contentOffset.x, 20);
 }
 
 -(BOOL)isNeedBackButton{
@@ -50,7 +53,14 @@
 
 - (void)initUI {
     float screenWidth = COMMON_SCREEN_WIDTH;
-    self.channelScrollView = [[CommonMusicChannelView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, [CommonMusicChannelView viewHeight:_data])];
+    float y = 0;
+    if(iOSVersionGreaterThan(@"7.0")) {
+        y = 20;
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, y)];
+        view.backgroundColor = [UIColor colorFromRGB:0x009ff0];
+        [self.contentView addSubview:view];
+    }
+    self.channelScrollView = [[CommonMusicChannelView alloc] initWithFrame:CGRectMake(0, y, screenWidth, [CommonMusicChannelView viewHeight:_data])];
     [self.channelScrollView renderUIWithData:_data];
     [self.contentView addSubview:self.channelScrollView];
     
@@ -75,7 +85,7 @@
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleDefault;
+    return UIStatusBarStyleLightContent;
 }
 
 -(void)dealloc {

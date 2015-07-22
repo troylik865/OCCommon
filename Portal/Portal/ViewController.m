@@ -17,8 +17,6 @@
 - (void)viewDidLoad {
     NSString *controllerName = @"CommonHomeViewController";
     [self.navigationController pushViewController:[[NSClassFromString(controllerName) alloc] init] animated:YES];
-    
-
 }
 
 - (void)didReceiveMemoryWarning {

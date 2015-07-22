@@ -18,6 +18,8 @@
 
 @property (nonatomic, strong) UIButton *downLoadButton;
 
+@property (nonatomic, strong) UIView *bottomLine;
+
 @end
 
 @implementation CommonMusicCell
@@ -27,6 +29,7 @@
     if(self) {
         [self initUI];
         self.selectionStyle = UITableViewCellSelectionStyleNone;
+        self.layer.masksToBounds = YES;
     }
     return self;
 }
@@ -42,6 +45,10 @@
     [_downLoadButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     _downLoadButton.titleLabel.font = [UIFont getHeitiSCFont:12];
     [self addSubview:_downLoadButton];
+    
+    _bottomLine = [[UIView alloc] initWithFrame:CGRectZero];
+    [self addSubview:_bottomLine];
+    _bottomLine.backgroundColor = [UIColor colorWithHexString:@"#202325" alpha:0.15];
 }
 
 /**
@@ -49,12 +56,13 @@
  */
 -(void)downLoadFile {
     NSString *url = [_data objectForKey:@"url"];
+    __weak CommonMusicCell *weakSelf = self;
     [CoreHttpService getDataWithUURL:url params:nil method:@"get" needCache:YES block:^(NSData *data, NSError *error) {
         if(!error){
             dispatch_async(dispatch_get_main_queue(), ^{
+                [weakSelf setNeedsLayout];
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"文件下载成功" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
                 [alertView show];
-                [self setNeedsLayout];
             });
         }
     }];
@@ -79,6 +87,7 @@
         if(STRING_IS_BLANK(localPath)) {
             [_downLoadButton addTarget:self action:@selector(downLoadFile) forControlEvents:UIControlEventTouchUpInside];
         }
+        _bottomLine.frame = CGRectMake(20, self.height - 1, self.width - 40, 1);
     }
 }
 
@@ -87,6 +96,9 @@
 }
 
 +(float)cellHeight:(NSDictionary *)data {
+    if(!data) {
+        return 0.01;
+    }
     return 100;
 }
 

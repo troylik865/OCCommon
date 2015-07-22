@@ -15,19 +15,20 @@
 
 @property (nonatomic, strong) NSMutableArray *playListArray;
 
-@property (nonatomic, assign) float     screenWidth;
+@property (nonatomic, assign) float screenWidth;
+
+@property (nonatomic, assign) NSInteger currentIndex;
 
 @end
 
 @implementation CommonMusicContentView
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor redColor];
         _playListArray = [NSMutableArray array];
         self.pagingEnabled = YES;
+        self.delegate = self;
         self.showsHorizontalScrollIndicator = NO;
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(trigger:) name:HOME_NOTIFICATION_TRIGGER object:nil];
@@ -35,9 +36,9 @@
     return self;
 }
 
--(void)trigger:(NSNotification*)notification{
+- (void)trigger:(NSNotification *)notification {
     NSDictionary *userInfo = [notification userInfo];
-    if(!userInfo) {
+    if (!userInfo) {
         return;
     }
     NSInteger index = [[userInfo objectForKey:@"index"] integerValue];
@@ -46,17 +47,18 @@
     [tableView loadMusicData];
 }
 
--(void)renderUIWithData:(NSDictionary *)data {
+- (void)renderUIWithData:(NSDictionary *)data {
     _channelsArray = [data objectForKey:@"channels"];
-    if(ARRAY_IS_EMPTY(_channelsArray)) {
-        if(ARRAY_IS_EMPTY(_playListArray)) {
+    if (ARRAY_IS_EMPTY(_channelsArray)) {
+        if (ARRAY_IS_EMPTY(_playListArray)) {
             return;
         }
         for (CommonMusicPlayListTableView *tableView in _playListArray) {
             [tableView removeFromSuperview];
         }
         [_playListArray removeAllObjects];
-    } else {
+    }
+    else {
         NSInteger count = _channelsArray.count;
         _screenWidth = COMMON_SCREEN_WIDTH;
         float height = self.height;
@@ -73,23 +75,35 @@
     }
 }
 
--(void)loadData:(NSInteger)index {
-    if(ARRAY_IS_EMPTY(_playListArray)) {
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    float x = scrollView.contentOffset.x;
+    NSInteger index = x / _screenWidth;
+    if(index == _currentIndex) {
+        return;
+    }
+    _currentIndex = index;
+    [[NSNotificationCenter defaultCenter] postNotificationName:HOME_NOTIFICATION_CHANNEL_CHANGE object:nil userInfo:@{ @"index":[NSNumber numberWithInteger:index]}];
+    CommonMusicPlayListTableView *tableView = [_playListArray objectAtIndex:index];
+    [tableView loadMusicData];
+}
+
+- (void)loadData:(NSInteger)index {
+    if (ARRAY_IS_EMPTY(_playListArray)) {
         return;
     }
     CommonMusicPlayListTableView *tableView = [_playListArray objectAtIndex:index];
     [tableView loadMusicData];
 }
 
--(void)refreshData:(NSInteger)index {
-    if(ARRAY_IS_EMPTY(_playListArray)) {
+- (void)refreshData:(NSInteger)index {
+    if (ARRAY_IS_EMPTY(_playListArray)) {
         return;
     }
     CommonMusicPlayListTableView *tableView = [_playListArray objectAtIndex:index];
     [tableView refreshData];
 }
 
--(void)dealloc {
+- (void)dealloc {
     SafeRelease(_playListArray);
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }

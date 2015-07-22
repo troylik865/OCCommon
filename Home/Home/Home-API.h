@@ -18,4 +18,7 @@
 //频道部分按钮触发下面的列表切换
 #define HOME_NOTIFICATION_TRIGGER @"CHANGE_TRIGGER"
 
+//列表页面左右切换的时候进行上面的频道按钮的切换
+#define HOME_NOTIFICATION_CHANNEL_CHANGE @"CHANNEL_CHANGE"
+
 #endif

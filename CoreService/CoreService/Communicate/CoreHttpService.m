@@ -91,7 +91,6 @@
             request = mutableRequest;
         }
         [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler: ^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-            block(data, connectionError);
             
             if (!data || connectionError) {
                 return;
@@ -101,6 +100,7 @@
                 //将文件写入
                 [manager createFileAtPath:filePath contents:data attributes:nil];
             }
+            block(data, connectionError);
         }];
         
         return;

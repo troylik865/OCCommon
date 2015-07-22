@@ -16,6 +16,12 @@
 
 @property (nonatomic, strong) NSArray *channels;
 
+@property (nonatomic, assign) BOOL hasInit;
+
+@property (nonatomic, assign) NSInteger currentIndex;
+
+@property (nonatomic, assign) NSInteger preIndex;
+
 @end
 
 @implementation CommonMusicChannelView
@@ -27,10 +33,43 @@
     if (self) {
         _buttonArray = [NSMutableArray array];
         //初始化View
-        self.backgroundColor = [UIColor colorWithHexString:@"#202325" alpha:0.8];
+        self.backgroundColor = [UIColor colorFromRGB:0x009ff0];
         self.showsHorizontalScrollIndicator = NO;
+        self.bounces = NO;
+        _currentIndex = 0;
+        _preIndex = 0;
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(triggerChannelChange:) name:HOME_NOTIFICATION_CHANNEL_CHANGE object:nil];
     }
     return self;
+}
+
+- (void)triggerChannelChange:(NSNotification *)notification {
+    NSDictionary *userInfo = [notification userInfo];
+    if (!userInfo) {
+        return;
+    }
+    NSInteger index = [[userInfo objectForKey:@"index"] integerValue];
+    _currentIndex = index;
+    [self buttonBackgroundChange];
+    _preIndex = index;
+}
+
+-(void)buttonBackgroundChange {
+    if(_preIndex == _currentIndex) {
+        return;
+    }
+    UIButton *preButton = [_buttonArray objectAtIndex:_preIndex];
+    UIButton *currentButton = [_buttonArray objectAtIndex:_currentIndex];
+    float left = currentButton.left;
+    
+    preButton.titleLabel.textColor = [UIColor whiteColor];
+    currentButton.titleLabel.textColor = [UIColor colorWithHexString:@"#202325" alpha:0.6];
+    if(left > 150){
+        [self setContentOffset:CGPointMake(left + 10 - 150, 0) animated:YES];
+    }
+    if(_currentIndex == 1) {
+        [self setContentOffset:CGPointMake(0, 0) animated:YES];
+    }
 }
 
 
@@ -56,11 +95,8 @@
     
     //如果不为空的情况下 进行button的添加和UI的渲染
     else {
+        float y = 0,x = 10;
         NSInteger count = _channels.count;
-        float y = 0;
-        if(iOSVersionGreaterThan(@"7.0")) {
-            y = 20;
-        }
         for (int i = 0; i < count; i++) {
             NSDictionary *data = [_channels objectAtIndex:i];
             if(!data) {
@@ -74,45 +110,22 @@
             [_buttonArray addObject:button];
             [button setTag:(i + 1)];
             [self addSubview:button];
+            
+            CGSize size = [button.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:button.titleLabel.font}];
+            button.frame = CGRectMake(x, y, size.width, 44);
+            x += size.width + 10;
         }
+        self.contentSize = CGSizeMake(x, 0);
     }
-}
-
--(void)layoutSubviews {
-    [super layoutSubviews];
-    NSInteger count = _buttonArray.count;
-    float x = 10;
-    float y = 0;
-    if(iOSVersionGreaterThan(@"7.0")) {
-        y = 20;
-    }
-    for (int i = 0; i < count; i++) {
-        UIButton *button = (UIButton *)[self viewWithTag:(i + 1)];
-        if(!button) {
-            continue;
-        }
-        CGSize size = [button.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:button.titleLabel.font}];
-        button.frame = CGRectMake(x, y, size.width, 44);
-        x += size.width + 10;
-    }
-    self.contentSize = CGSizeMake(x, 44);
 }
 
 -(void)buttonClick:(UIButton *)button {
     NSInteger index = button.tag - 1;
-    NSDictionary *data = [_channels objectAtIndex:index];
     [[NSNotificationCenter defaultCenter] postNotificationName:HOME_NOTIFICATION_TRIGGER object:nil userInfo:@{ @"index":[NSNumber numberWithInteger:index]}];
 }
 
-
-
 +(float)viewHeight:(NSDictionary *)data {
-    
-    float y = 0;
-    if(iOSVersionGreaterThan(@"7.0")) {
-        y = 20;
-    }
-    return COMMON_NAVIBAR_HEIGHT + y;
+    return COMMON_NAVIBAR_HEIGHT;
 }
 
 -(void)dealloc {

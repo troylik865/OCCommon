@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) NSDictionary *data;
 
-//@property (nonatomic, strong) MPMoviePlayerController *playController;
+@property (nonatomic, strong) MPMoviePlayerController *playController;
 
 @property (nonatomic, assign) float screenWidth;
 
@@ -36,7 +36,7 @@
 
 @property (nonatomic, strong) UISlider *slider;
 
-@property (nonatomic, strong) AVAudioPlayer *thePlayer;
+//@property (nonatomic, strong) AVAudioPlayer *thePlayer;
 
 @end
 
@@ -61,7 +61,8 @@
 
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    [_thePlayer stop];
+//    [_thePlayer stop];
+    [_playController stop];
     [_timer invalidate];
 }
 
@@ -69,30 +70,31 @@
 -(void)initUI {
     NSString *url = DEFAULT_BLANK_IN_DICTIONARY(_data, @"url");
     
-    NSBundle *bundle=[NSBundle mainBundle];
-    NSString *localUrl=[bundle pathForResource:@"bigbang-sober" ofType:@"mp3"];
-//    _playController = [[MPMoviePlayerController alloc] initWithContentURL:STRING_IS_BLANK(localUrl)?[NSURL URLWithString:url]:[NSURL fileURLWithPath:localUrl]];
-//    _playController.view.frame = CGRectMake(0, 0,_screenWidth , 200);
-//    _playController.controlStyle = MPMovieControlStyleNone;
-//    _playController.shouldAutoplay = NO;
-//    _playController.repeatMode = MPMovieRepeatModeOne;
-//    _playController.scalingMode = MPMovieScalingModeAspectFit;
-//    [_playController play];
-    AVAudioSession *session = [AVAudioSession sharedInstance];
-    [session setActive:YES error:nil];
-    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
-    
-    NSURL *musicURL = [NSURL fileURLWithPath:localUrl];
-    
-    _thePlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicURL error:nil];
-    
-    [_thePlayer prepareToPlay];
-    
-    [_thePlayer setVolume:1];   //设置音量大小
-    
-    _thePlayer.numberOfLoops = -1;//设置音乐播放次数  -1为一直循环
-    
-    [_thePlayer play];
+//    NSBundle *bundle=[NSBundle mainBundle];
+    //    NSString *localUrl=[bundle pathForResource:@"bigbang-sober" ofType:@"mp3"];
+    NSString *localUrl = [CoreHttpService fileExist:url];
+    _playController = [[MPMoviePlayerController alloc] initWithContentURL:STRING_IS_BLANK(localUrl)?[NSURL URLWithString:url]:[NSURL fileURLWithPath:localUrl]];
+    _playController.view.frame = CGRectMake(0, 0,_screenWidth , 200);
+    _playController.controlStyle = MPMovieControlStyleNone;
+    _playController.shouldAutoplay = NO;
+    _playController.repeatMode = MPMovieRepeatModeOne;
+    _playController.scalingMode = MPMovieScalingModeAspectFit;
+    [_playController play];
+//    AVAudioSession *session = [AVAudioSession sharedInstance];
+//    [session setActive:YES error:nil];
+//    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+//    
+//    NSURL *musicURL = STRING_IS_BLANK(localUrl) ? [NSURL URLWithString:url] : [NSURL fileURLWithPath:localUrl];
+//    
+//    _thePlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicURL error:nil];
+//    
+//    [_thePlayer prepareToPlay];
+//    
+//    [_thePlayer setVolume:1];   //设置音量大小
+//    
+//    _thePlayer.numberOfLoops = -1;//设置音乐播放次数  -1为一直循环
+//    
+//    [_thePlayer play];
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateProgress) userInfo:nil repeats:YES];
     
@@ -151,16 +153,16 @@
 
 -(void)valueChange:(UISlider *)slider {
     float chooseTime = slider.value * _totalTime;
-    [_thePlayer setCurrentTime:chooseTime];
+    [_playController setCurrentPlaybackTime:chooseTime];
 }
 
 
 -(void)updateProgress {
     
-    float playTime = _thePlayer.currentTime;
+    float playTime = _playController.currentPlaybackTime;
     
     if(_totalTime == 0) {
-        _totalTime = _thePlayer.duration;
+        _totalTime = _playController.duration;
         
         _totalTimeLabel.text = [NSString stringWithFormat:@"%zi:%zi",(int)(_totalTime / 60),((int)_totalTime) % 60];
     }
@@ -176,14 +178,14 @@
     _isPlay = !_isPlay;
     [_playButton setImage:[UIImage imageLoader:!_isPlay?@"music_play":@"music_pause"] forState:UIControlStateNormal];
     if(!_isPlay){
-        [_thePlayer pause];
+        [_playController pause];
         if (![_timer isValid]) {
             return ;
         }
         
         [_timer setFireDate:[NSDate distantFuture]];
     } else {
-        [_thePlayer play];
+        [_playController play];
         if (![_timer isValid]) {
             return ;
         }
@@ -197,7 +199,7 @@
 
 
 -(void)dealloc {
-    SafeRelease(_thePlayer);
+    SafeRelease(_playController);
     SafeRelease(_data);
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }

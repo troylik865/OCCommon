@@ -12,6 +12,5 @@
 
 #import <Home/Home.h>
 #import "PortalMacro.h"
-#import <Database/CommonDatabase.h>
 
 #endif

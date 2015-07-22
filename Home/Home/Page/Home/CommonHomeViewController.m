@@ -11,9 +11,15 @@
 
 @interface CommonHomeViewController ()
 
-@property (nonatomic, strong) UIScrollView *channelScrollView;
+@property (nonatomic, strong) UIView *firstView;
 
-@property (nonatomic, strong) NSDictionary *data;
+@property (nonatomic, strong) UIView *secondView;
+
+@property (nonatomic, strong) UIButton *button;
+
+
+@property (nonatomic, strong) UIButton *button2;
+
 
 @end
 
@@ -23,36 +29,54 @@
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = [UIColor whiteColor];
-    CommonMessage *message = [[CommonMessage alloc] initWithHttpUrl:@"http://www.douban.com/j/app/radio/channels" params:nil];
-    [self sendMessage:message];
+    [self initUI];
 }
 
 
 - (void)initUI {
-    float y = 0;
-    if(iOSVersionGreaterThan(@"7.0")) {
-        y = 20;
-    }
-    self.channelScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, y, COMMON_SCREEN_WIDTH, 44)];
-    self.channelScrollView.backgroundColor = [UIColor redColor];
-    [self.view addSubview:self.channelScrollView];
+    _secondView = [[UIView alloc] initWithFrame:CGRectMake(80, 80, 100, 100)];
+    _secondView.backgroundColor = [UIColor blueColor];
+    _secondView.layer.transform = CATransform3DMakeTranslation(0, 0, -60);
+    [self.contentView addSubview:_secondView];
+    
+//    _firstView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    _firstView.backgroundColor = [UIColor redColor];
+//    [self.contentView addSubview:_firstView];
+    
+    _button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_button setTitle:@"测试" forState:UIControlStateNormal];
+    [_button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self.contentView addSubview:_button];
+    [_button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
+    _button.frame = CGRectMake(100, 44, 50, 30);
+    
+    _button2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_button2 setTitle:@"测试" forState:UIControlStateNormal];
+    [_button2 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self.contentView addSubview:_button2];
+    [_button2 addTarget:self action:@selector(buttonClick2) forControlEvents:UIControlEventTouchUpInside];
+    _button2.frame = CGRectMake(160, 44, 50, 30);
 }
 
+-(void)buttonClick {
+    __weak UIView *weakView = _secondView;
+    [UIView animateWithDuration:1 animations:^{
+        weakView.layer.transform = CATransform3DRotate(CATransform3DMakeScale(0.5, 0.5, 1), 0.75, 0, 0, 1);
+    }];
+}
 
--(void)messageSuccess:(CommonMessage *)message {
-    NSDictionary *data = [message getDictionaryData];
-    if(!data) {
-        return;
-    }
-    [self initUI];
+-(void)buttonClick2 {
+    CATransform3D transform = CATransform3DMakeRotation(0.75,0 , 1, 0);
+    _secondView.layer.transform = transform;
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleDefault;
 }
 
--(void)dealloc {
-    SafeRelease(_data);
+
+-(BOOL)isNeedBackButton {
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning {
